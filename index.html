@@ -1,0 +1,5833 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="author" content="Subbagian Registrasi" />
+
+
+
+<title>SMMPTN 2023</title>
+
+<meta property="og:title" content="SMMPTN 2023" />
+
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+
+<link rel="icon" href="data:image/x-icon;" type="image/x-icon">
+
+
+<script type="text/javascript">
+window.FlexDashboardComponents = [];
+</script>
+
+<script src="site_libs/header-attrs-2.27/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/stickytableheaders-0.1.19/jquery.stickytableheaders.min.js"></script>
+<link href="site_libs/value-box-accent-static-0.6.2/theme-cosmo-value-box.css" rel="stylesheet" />
+<link href="site_libs/flexdashboard-css-0.6.2/flexdashboard.min.css" rel="stylesheet" />
+<link href="site_libs/flexdashboard-css-0.6.2/theme-cosmo.css" rel="stylesheet" />
+<link href="site_libs/value-box-core-0.6.2/value-box.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-6.5.2/js/script.js"></script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/plotly-binding-4.10.4/plotly.js"></script>
+<script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+<link href="site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.33/datatables.js"></script>
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<style type="text/css">
+/*
+  CSS for flexdashboard.js' use of Sly(). The sizing/position of this CSS needs to be
+  applied _before_ flexdashboard.js initializes, which is why this CSS has been pulled
+  out from flexdashboard.scss and inlined in the document's head.
+*/
+
+.storyboard-nav button {
+  background: transparent;
+  border: 0;
+  opacity: .3;
+  outline: none;
+  padding: 0;
+}
+
+.storyboard-nav button:hover,
+.storyboard-nav button:hover {
+  opacity: .5;
+}
+
+.storyboard-nav button:disabled,
+.storyboard-nav button:disabled {
+  opacity: .1;
+}
+
+.storyboard-nav .sbnext,
+.storyboard-nav .sbprev {
+  float: left;
+  width: 2%;
+  height: 120px;
+}
+
+.storyboard-nav .sbprev {
+  text-align: left;
+  width: 2%;
+}
+
+.storyboard-nav .sbnext {
+  float: right;
+  text-align: right;
+  margin-right: 8px;
+}
+
+.storyboard-nav .sbframelist {
+  margin: 0 auto;
+  width: 94%;
+  height: 120px;
+  overflow: hidden;
+  text-shadow: none;
+  margin-bottom: 8px;
+}
+
+.storyboard-nav .sbframelist ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.storyboard-nav .sbframelist ul li {
+  float: left;
+  width: 270px;
+  height: 100%;
+  padding: 10px 10px 10px 10px;
+  margin-right: 8px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.storyboard-nav .sbframelist ul li:last-child {
+  margin-right: 0px;
+}
+
+.sbframe-commentary {
+  width: 300px;
+}
+
+.sbframe-commentary ul {
+  padding-left: 22px;
+}
+
+.sbframe.active {
+  display: flex;
+}
+
+.sbframe:not(.active) {
+  display: none;
+}
+</style>
+
+
+
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="container-fluid">
+<div class="navbar-header">
+
+<span class="navbar-logo pull-left">
+  
+</span>
+<span class="navbar-brand">
+  SMMPTN 2023
+  <span class="navbar-author">
+    Subbagian Registrasi
+    </span>
+</span>
+
+<button id="navbar-button" type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+
+</div>
+<div id="navbar" class="navbar-collapse collapse">
+<ul class="nav navbar-nav navbar-left">
+</ul>
+<ul class="nav navbar-nav navbar-right">
+</ul>
+</div><!--/.nav-collapse-->
+</div><!--/.container-->
+</div><!--/.navbar-->
+
+<script type="text/javascript">
+
+
+var FlexDashboard = (function () {
+
+  // initialize options
+  var _options = {};
+
+  var FlexDashboard = function() {
+
+    // default options
+    _options = $.extend(_options, {
+      theme: "cosmo",
+      fillPage: false,
+      orientation: 'columns',
+      storyboard: false,
+      defaultFigWidth: 576,
+      defaultFigHeight: 461,
+      defaultFigWidthMobile: 360,
+      defaultFigHeightMobile: 461,
+      isMobile: false,
+      isPortrait: false,
+      resize_reload: true
+    });
+  };
+
+  function init(options) {
+
+    // extend default options
+    $.extend(true, _options, options);
+
+    // add ids to sections that don't have them (pandoc won't assign ids
+    // to e.g. sections with titles consisting of only chinese characters)
+    var nextId = 1;
+    $('.level1:not([id]),.level2:not([id]),.level3:not([id])').each(function() {
+      $(this).attr('id', 'dashboard-' + nextId++);
+    });
+
+    // find navbar items
+    var navbarItems = $('#flexdashboard-navbar');
+    if (navbarItems.length)
+      navbarItems = JSON.parse(navbarItems.html());
+    addNavbarItems(navbarItems);
+
+    // find the main dashboard container
+    var dashboardContainer = $('#dashboard-container');
+
+    // resolve mobile classes
+    resolveMobileClasses(dashboardContainer);
+
+    // one time global initialization for components
+    componentsInit(dashboardContainer);
+
+    // look for a global sidebar
+    var globalSidebar = dashboardContainer.find(".section.level1.sidebar");
+    if (globalSidebar.length > 0) {
+
+      // global layout for fullscreen displays
+      if (!isMobilePhone()) {
+
+         // hoist it up to the top level
+         globalSidebar.insertBefore(dashboardContainer);
+
+         // lay it out (set width/positions)
+         layoutSidebar(globalSidebar, dashboardContainer);
+
+      // tuck sidebar into first page for mobile phones
+      } else {
+
+        // convert it into a level3 section
+        globalSidebar.removeClass('sidebar');
+        globalSidebar.removeClass('level1');
+        globalSidebar.addClass('level3');
+        var h1 = globalSidebar.children('h1');
+        var h3 = $('<h3></h3>');
+        h3.append(h1.contents());
+        h3.insertBefore(h1);
+        h1.detach();
+
+        // move it into the first page
+        var page = dashboardContainer.find('.section.level1').first();
+        if (page.length > 0)
+          page.prepend(globalSidebar);
+      }
+    }
+
+    // look for pages to layout
+    var pages = $('div.section.level1');
+    if (pages.length > 0) {
+
+        // find the navbar and collapse on clicked
+        var navbar = $('#navbar');
+        navbar.on("click", "a[data-toggle!=dropdown]", null, function () {
+           navbar.collapse('hide');
+        });
+
+        // envelop the dashboard container in a tab content div
+        dashboardContainer.wrapInner('<div class="tab-content"></div>');
+
+        pages.each(function(index) {
+
+          // lay it out
+          layoutDashboardPage($(this));
+
+          // add it to the navbar
+          addToNavbar($(this), index === 0);
+
+        });
+
+    } else {
+
+      // remove the navbar and navbar button if we don't
+      // have any navbuttons
+      if (navbarItems.length === 0) {
+        $('#navbar').remove();
+        $('#navbar-button').remove();
+      }
+
+      // add the storyboard class if requested
+      if (_options.storyboard)
+        dashboardContainer.addClass('storyboard');
+
+      // layout the entire page
+      layoutDashboardPage(dashboardContainer);
+    }
+
+    // if we are in shiny we need to trigger a window resize event to
+    // force correct layout of shiny-bound-output elements
+    if (isShinyDoc())
+      $(window).trigger('resize');
+
+    // make main components visible
+    $('.section.sidebar').css('visibility', 'visible');
+    dashboardContainer.css('visibility', 'visible');
+
+    // handle location hash
+    handleLocationHash();
+
+    // intialize prism highlighting
+    initPrismHighlighting();
+
+    // record mobile and orientation state then register a handler
+    // to refresh if resize_reload is set to true and it changes
+    _options.isMobile = isMobilePhone();
+    _options.isPortrait = isPortrait();
+    if (_options.resize_reload) {
+      $(window).on('resize', function() {
+        if (_options.isMobile !== isMobilePhone() ||
+            _options.isPortrait !== isPortrait()) {
+          window.location.reload();
+        }
+      });
+    } else {
+      // if in desktop mode and resizing to mobile, make sure the heights are 100%
+      // This enforces what `fillpage.css` does for "wider" pages.
+      // Since we are not reloading once the page becomes small, we need to force the height to 100%
+      // This is a new situation introduced when `_options.resize_reload` is `false`
+      if (! _options.isMobile) {
+        // only add if `fillpage.css` was added in the first place
+        if (_options.fillPage) {
+          // fillpage.css
+          $("html,body,#dashboard").css("height", "100%");
+        }
+      }
+    }
+    // trigger layoutcomplete event
+    dashboardContainer.trigger('flexdashboard:layoutcomplete');
+  }
+
+  function resolveMobileClasses(dashboardContainer) {
+     // add top level layout class
+    dashboardContainer.addClass(isMobilePhone() ? 'mobile-layout' :
+                                                  'desktop-layout');
+
+    // look for .mobile sections and add .no-mobile to their peers
+    var mobileSections = $('.section.mobile');
+    mobileSections.each(function() {
+       var id = $(this).attr('id');
+       var nomobileId = id.replace(/-\d+$/, '');
+       $('#' + nomobileId).addClass('no-mobile');
+    });
+  }
+
+  function addNavbarItems(navbarItems) {
+
+    var navbarLeft = $('ul.navbar-left');
+    var navbarRight = $('ul.navbar-right');
+
+    for (var i = 0; i<navbarItems.length; i++) {
+
+      // get the item
+      var item = navbarItems[i];
+
+      // determine the container
+      var container = null;
+      if (item.align === "left")
+        container = navbarLeft;
+      else
+        container = navbarRight;
+
+      // navbar menu if we have multiple items
+      if (item.items) {
+        var menu = navbarMenu(null, item.icon, item.title, container);
+        for (var j = 0; j<item.items.length; j++) {
+          var subItem = item.items[j];
+          var li = $('<li></li>');
+          var a = navbarLink(subItem.icon, subItem.title, subItem.href, subItem.target);
+          a.removeClass("nav-link").addClass("dropdown-item");
+          li.append(a);
+          menu.append(li);
+        }
+      } else {
+        var li = $('<li class="nav-item"></li>');
+        li.append(navbarLink(item.icon, item.title, item.href, item.target));
+        container.append(li);
+      }
+    }
+  }
+
+  // create or get a reference to an existing dropdown menu
+  function navbarMenu(id, icon, title, container) {
+    var existingMenu = [];
+    if (id)
+      existingMenu = container.children('#' + id);
+    if (existingMenu.length > 0) {
+      return existingMenu.children('ul');
+    } else {
+      var li = $('<li class="nav-item"></li>');
+      if (id)
+        li.attr('id', id);
+      li.addClass('dropdown');
+      // auto add "Share" title on mobile if necessary
+      if (!title && icon && (icon === "fa-share-alt") && isMobilePhone())
+        title = "Share";
+      if (title) {
+        title = title + ' <span class="caret"></span>';
+      }
+      var a = navbarLink(icon, title, "#");
+      a.addClass('dropdown-toggle');
+      a.attr('data-toggle', 'dropdown');
+      a.attr('data-bs-toggle', 'dropdown');
+      a.attr('role', 'button');
+      a.attr('aria-expanded', 'false');
+      li.append(a);
+      var ul = $('<ul class="dropdown-menu"></ul>');
+      ul.attr('role', 'menu');
+      li.append(ul);
+      container.append(li);
+      return ul;
+    }
+  }
+
+  function addToNavbar(page, active) {
+
+    // capture the id and data-icon attribute (if any)
+    var id = page.attr('id');
+    var icon = page.attr('data-icon');
+    var navmenu = page.attr('data-navmenu');
+    var navmenuIcon = page.attr('data-navmenu-icon');
+
+    // get hidden state (transfer this to navbar)
+    var hidden = page.hasClass('hidden');
+    page.removeClass('hidden');
+
+    // sanitize the id for use with bootstrap tabs
+    id = id.replace(/[.\/?&!#<>]/g, '').replace(/\s/g, '_');
+    page.attr('id', id);
+
+    // get the wrapper
+    var wrapper = page.closest('.dashboard-page-wrapper');
+
+    // move the id to the wrapper
+    page.removeAttr('id');
+    wrapper.attr('id', id);
+
+    // add the tab-pane class to the wrapper
+    wrapper.addClass('tab-pane');
+
+    // get a reference to the h1, discover its inner contens, then detach it
+    var h1 = wrapper.find('h1').first();
+    var title = h1.contents();
+    h1.detach();
+
+    // create a navbar item
+    var li = $('<li></li>');
+    var a = navbarLink(icon, title, '#' + id);
+    a.attr('data-toggle', 'tab');
+    a.attr('data-bs-toggle', 'tab');
+    li.append(a);
+
+    // add it to the navbar (or navbar menu if specified)
+    var container = $('ul.navbar-left');
+    if (navmenu) {
+      var menuId = navmenu.replace(/\s+/g, '');
+      var menu = navbarMenu(menuId, navmenuIcon, navmenu, container);
+      li.find("> a").removeClass("nav-link").addClass("dropdown-item");
+      menu.append(li);
+    } else {
+      li.addClass("nav-item")
+      container.append(li);
+    }
+
+    // mark active tab and corresponding nav menu item
+    if (active)
+      $(a).tab("show");
+
+    // hide it if requested
+    if (hidden)
+      li.addClass('hidden');
+  }
+
+  function navbarLink(icon, title, href, target) {
+
+    var a = $('<a class="nav-link"></a>');
+    if (icon) {
+
+      // get the name of the icon set and icon
+      var dashPos = icon.indexOf("-");
+      var iconSet = null;
+      var iconSplit = icon.split(" ");
+      if (iconSplit.length > 1) {
+        iconSet = iconSplit[0];
+        icon = iconSplit.slice(1).join(" ");
+      } else {
+        iconSet = icon.substring(0, dashPos);
+      }
+      var iconName = icon.substring(dashPos + 1);
+
+      // create the icon
+      var iconElement = $('<span class="' + iconSet + ' ' + icon + '"></span>');
+      if (title)
+        iconElement.css('margin-right', '7px');
+      a.append(iconElement);
+      // if href is null see if we can auto-generate based on icon (e.g. social)
+      if (!href)
+        maybeGenerateLinkFromIcon(iconName, a);
+    }
+    if (title)
+      a.append(title);
+
+    // add the href.
+    if (href) {
+      if (href === "source_embed") {
+        a.attr('href', '#');
+        a.attr('data-featherlight', "#flexdashboard-source-code");
+        a.featherlight({
+            beforeOpen: function(event){
+              $('body').addClass('unselectable');
+            },
+            afterClose: function(event){
+              $('body').removeClass('unselectable');
+            }
+        });
+      } else {
+        a.attr('href', href);
+      }
+    }
+
+    // add the arget
+    if (target)
+      a.attr('target', target);
+
+    return a;
+  }
+
+  // auto generate a link from an icon name (e.g. twitter) when possible
+  function maybeGenerateLinkFromIcon(iconName, a) {
+
+     var serviceLinks = {
+      "twitter": "https://twitter.com/share?text=" + encodeURIComponent(document.title) + "&url="+encodeURIComponent(location.href),
+      "facebook": "https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent(location.href),
+      "linkedin": "https://www.linkedin.com/shareArticle?mini=true&url="+encodeURIComponent(location.href) + "&title=" + encodeURIComponent(document.title),
+      "pinterest": "https://pinterest.com/pin/create/link/?url="+encodeURIComponent(location.href) + "&description=" + encodeURIComponent(document.title)
+    };
+
+    var makeSocialLink = function(a, href) {
+      a.attr('href', '#');
+      a.on('click', function(e) {
+        e.preventDefault();
+        window.open(href);
+      });
+    };
+
+    $.each(serviceLinks, function(key, value) {
+      if (iconName.indexOf(key) !== -1)
+        makeSocialLink(a, value);
+    });
+  }
+
+  // layout a dashboard page
+  function layoutDashboardPage(page) {
+
+    // use a page wrapper so that free form content above the
+    // dashboard appears at the top rather than the side (as it
+    // would without the wrapper in a column orientation)
+    var wrapper = $('<div class="dashboard-page-wrapper"></div>');
+    page.wrap(wrapper);
+
+    // if there are no level2 or level3 headers synthesize a level3
+    // header to contain the (e.g. frame it, scroll container, etc.)
+    var headers = page.find('h2,h3');
+    if (headers.length === 0)
+      page.wrapInner('<div class="section level3"></div>');
+
+    // hoist up any content before level 2 or level 3 headers
+    var children = page.children();
+    children.each(function(index) {
+      if ($(this).hasClass('level2') || $(this).hasClass('level3'))
+        return false;
+      $(this).insertBefore(page);
+    });
+
+    // determine orientation and fillPage behavior for distinct media
+    var orientation, fillPage, storyboard;
+
+    // media: mobile phone
+    if (isMobilePhone()) {
+
+      // if there is a sidebar we need to ensure it's content
+      // is properly framed as an h3
+      var sidebar = page.find('.section.sidebar');
+      sidebar.removeClass('sidebar');
+      sidebar.wrapInner('<div class="section level3"></div>');
+      var h2 = sidebar.find('h2');
+      var h3 = $('<h3></h3>');
+      h3.append(h2.contents());
+      h3.insertBefore(h2);
+      h2.detach();
+
+      // wipeout h2 elements then enclose them in a single h2
+      var level2 = page.find('div.section.level2');
+      level2.each(function() {
+        level2.children('h2').remove();
+        level2.children().unwrap();
+      });
+      page.wrapInner('<div class="section level2"></div>');
+
+      // substitute mobile images
+      if (isPortrait()) {
+        var mobileFigures = $('img.mobile-figure');
+        mobileFigures.each(function() {
+          // get the src (might be base64 encoded)
+          var src = $(this).attr('src');
+
+          // find it's peer
+          var id = $(this).attr('data-mobile-figure-id');
+          var img = $('img[data-figure-id=' + id + "]");
+          img.attr('src', src)
+             .attr('width', _options.defaultFigWidthMobile)
+             .attr('height', _options.defaultFigHeightMobile);
+        });
+      }
+
+      // hoist storyboard commentary into it's own section
+      if (page.hasClass('storyboard')) {
+        var commentaryHR = page.find('div.section.level3 hr');
+        commentaryHR.each(function() {
+          var commentary = $(this).nextAll().detach();
+          var commentarySection = $('<div class="section level3"></div>');
+          commentarySection.append(commentary);
+          commentarySection.insertAfter($(this).closest('div.section.level3'));
+          $(this).remove();
+        });
+      }
+
+      // force a non full screen layout by columns
+      orientation = _options.orientation = 'columns';
+      fillPage = _options.fillPage = false;
+      storyboard = _options.storyboard = false;
+
+    // media: desktop
+    } else {
+
+      // determine orientation
+      orientation = page.attr('data-orientation');
+      if (orientation !== 'rows' && orientation != 'columns')
+        orientation = _options.orientation;
+
+      // determine storyboard mode
+      storyboard = page.hasClass('storyboard');
+
+      // fillPage based on options (force for storyboard)
+      fillPage = _options.fillPage || storyboard;
+
+      // handle sidebar
+      var sidebar = page.find('.section.level2.sidebar');
+      if (sidebar.length > 0)
+        layoutSidebar(sidebar, page);
+    }
+
+    // give it and it's parent divs height: 100% if we are in fillPage mode
+    if (fillPage) {
+      page.addClass('vertical-layout-fill');
+      page.css('height', '100%');
+      page.parents('div').css('height', '100%');
+    } else {
+      page.addClass('vertical-layout-scroll');
+    }
+
+    // perform the layout
+    if (storyboard)
+      layoutPageAsStoryboard(page);
+    else if (orientation === 'rows')
+      layoutPageByRows(page, fillPage);
+    else if (orientation === 'columns')
+      layoutPageByColumns(page, fillPage);
+  }
+
+  function layoutSidebar(sidebar, content) {
+
+    // get it out of the header hierarchy
+    sidebar = sidebar.first();
+    if (sidebar.hasClass('level1')) {
+      sidebar.removeClass('level1');
+      sidebar.children('h1').remove();
+    } else if (sidebar.hasClass('level2')) {
+      sidebar.removeClass('level2');
+      sidebar.children('h2').remove();
+    }
+
+    // determine width
+    var sidebarWidth = isTablet() ? 220 : 250;
+    var dataWidth = parseInt(sidebar.attr('data-width'));
+    if (dataWidth)
+      sidebarWidth = dataWidth;
+
+    // set the width and shift the page right to accomodate the sidebar
+    sidebar.css('width', sidebarWidth + 'px');
+    content.css('padding-left', sidebarWidth + 'px');
+
+    // wrap it's contents in a form
+    sidebar.wrapInner($('<form></form>'));
+  }
+
+  function layoutPageAsStoryboard(page) {
+
+    // create storyboard navigation
+    var nav = $('<div class="storyboard-nav"></div>');
+
+    // add navigation buttons
+    var prev = $('<button class="sbprev"><i class="fa fa-angle-left"></i></button>');
+    nav.append(prev);
+    var next= $('<button class="sbnext"><i class="fa fa-angle-right"></i></button>');
+    nav.append(next);
+
+    // add navigation frame
+    var frameList = $('<div class="sbframelist"></div>');
+    nav.append(frameList);
+    var ul = $('<ul></ul>');
+    frameList.append(ul);
+
+     // find all the level3 sections (those are the storyboard frames)
+    var frames = page.find('div.section.level3');
+    frames.each(function() {
+
+      // mark it
+      $(this).addClass('sbframe');
+
+      // divide it into chart content and (optional) commentary
+      $(this).addClass('dashboard-column-orientation');
+
+      // stuff the chart into it's own div w/ flex
+      $(this).wrapInner('<div class="sbframe-component"></div>');
+      setFlex($(this), 1);
+      var frame = $(this).children('.sbframe-component');
+
+      // extract the title from the h3
+      var li = $('<li></li>');
+      var h3 = frame.children('h3');
+      li.append(h3.contents());
+      h3.detach();
+      ul.append(li);
+
+      // extract commentary
+      var hr = frame.children('hr');
+      if (hr.length) {
+        var commentary = hr.nextAll().detach();
+        hr.remove();
+        var commentaryFrame = $('<div class="sbframe-commentary"></div>');
+        commentaryFrame.addClass('flowing-content-shim');
+        commentaryFrame.addClass('flowing-content-container');
+        commentaryFrame.append(commentary);
+        $(this).append(commentaryFrame);
+
+        // look for a data-commentary-width attribute
+        var commentaryWidth = $(this).attr('data-commentary-width');
+        if (commentaryWidth)
+          commentaryFrame.css('width', commentaryWidth + 'px');
+      }
+
+      // layout the chart (force flex)
+      var result = layoutChart(frame, true);
+
+      // ice the notes if there are none
+      if (!result.notes)
+        frame.find('.chart-notes').remove();
+
+      // set flex on chart
+      setFlex(frame, 1);
+    });
+
+    // create a div to hold all the frames
+    var frameContent = $('<div class="sbframe-content"></div>');
+    frameContent.addClass('dashboard-row-orientation');
+    frameContent.append(frames.detach());
+
+    // row orientation to stack nav and frame content
+    page.addClass('dashboard-row-orientation');
+    page.append(nav);
+    page.append(frameContent);
+    setFlex(frameContent, 1);
+
+    // initialize sly
+    var sly = new Sly(frameList, {
+    		horizontal: true,
+    		itemNav: 'basic',
+    		smart: true,
+    		activateOn: 'click',
+    		startAt: 0,
+    		scrollBy: 1,
+    		activatePageOn: 'click',
+    		speed: 200,
+    		moveBy: 600,
+    		dragHandle: true,
+    		dynamicHandle: true,
+    		clickBar: true,
+    		keyboardNavBy: 'items',
+    		next: next,
+    		prev: prev
+    	}).init();
+
+    // make first frame active
+    frames.removeClass('active');
+    frames.first().addClass('active');
+
+    // subscribe to frame changed events
+    sly.on('active', function (eventName, itemIndex) {
+      frames.removeClass('active');
+      frames.eq(itemIndex).addClass('active')
+                          .trigger('shown');
+    });
+  }
+
+  function layoutPageByRows(page, fillPage) {
+
+    // row orientation
+    page.addClass('dashboard-row-orientation');
+
+    // find all the level2 sections (those are the rows)
+    var rows = page.find('div.section.level2');
+
+    // if there are no level2 sections then treat the
+    // entire page as if it's a level 2 section
+    if (rows.length === 0) {
+      page.wrapInner('<div class="section level2"></div>');
+      rows = page.find('div.section.level2');
+    }
+
+    rows.each(function () {
+
+      // flags
+      var haveNotes = false;
+      var haveFlexHeight = true;
+
+      // remove the h2
+      $(this).children('h2').remove();
+
+      // check for a tabset
+      var isTabset = $(this).hasClass('tabset');
+      if (isTabset)
+        layoutTabset($(this));
+
+      // give it row layout semantics if it's not a tabset
+      if (!isTabset)
+        $(this).addClass('dashboard-row');
+
+      // find all of the level 3 subheads
+      var columns = $(this).find('div.section.level3');
+
+      // determine figureSizes sizes
+      var figureSizes = chartFigureSizes(columns);
+
+      // fixup the columns
+      columns.each(function(index) {
+
+        // layout the chart (force flex if we are in a tabset)
+        var result = layoutChart($(this), isTabset);
+
+        // update flexHeight state
+        if (!result.flex)
+          haveFlexHeight = false;
+
+        // update state
+        if (result.notes)
+          haveNotes = true;
+
+        // set the column flex based on the figure width
+        // (value boxes will just get the default figure width)
+        var chartWidth = figureSizes[index].width;
+        setFlex($(this), chartWidth + ' ' + chartWidth + ' 0px');
+
+      });
+
+      // remove empty chart note divs
+      if (isTabset)
+        $(this).find('.chart-notes').filter(function() {
+            return $(this).html() === "&nbsp;";
+        }).remove();
+      if (!haveNotes)
+        $(this).find('.chart-notes').remove();
+
+       // make it a flexbox row
+      if (haveFlexHeight)
+        $(this).addClass('dashboard-row-flex');
+
+      // now we can set the height on all the wrappers (based on maximum
+      // figure height + room for title and notes, or data-height on the
+      // container if specified). However, don't do this if there is
+      // no flex on any of the constituent columns
+      var flexHeight = null;
+      var dataHeight = parseInt($(this).attr('data-height'));
+      if (dataHeight)
+        flexHeight = adjustedHeight(dataHeight, columns.first());
+      else if (haveFlexHeight)
+        flexHeight = maxChartHeight(figureSizes, columns);
+      if (flexHeight) {
+        if (fillPage)
+          setFlex($(this), flexHeight + ' ' + flexHeight + ' 0px');
+        else {
+          $(this).css('height', flexHeight + 'px');
+          setFlex($(this), '0 0 ' + flexHeight + 'px');
+        }
+      }
+
+    });
+  }
+
+  function layoutPageByColumns(page, fillPage) {
+
+    // column orientation
+    page.addClass('dashboard-column-orientation');
+
+    // find all the level2 sections (those are the columns)
+    var columns = page.find('div.section.level2');
+
+    // if there are no level2 sections then treat the
+    // entire page as if it's a level 2 section
+    if (columns.length === 0) {
+      page.wrapInner('<div class="section level2"></div>');
+      columns = page.find('div.section.level2');
+    }
+
+    // layout each column
+    columns.each(function (index) {
+
+      // remove the h2
+      $(this).children('h2').remove();
+
+      // make it a flexbox column
+      $(this).addClass('dashboard-column');
+
+      // check for a tabset
+      var isTabset = $(this).hasClass('tabset');
+      if (isTabset)
+        layoutTabset($(this));
+
+      // find all the h3 elements
+      var rows = $(this).find('div.section.level3');
+
+      // get the figure sizes for the rows
+      var figureSizes = chartFigureSizes(rows);
+
+      // column flex is the max row width (or data-width if specified)
+      var flexWidth;
+      var dataWidth = parseInt($(this).attr('data-width'));
+      if (dataWidth)
+        flexWidth = dataWidth;
+      else
+        flexWidth = maxChartWidth(figureSizes);
+      setFlex($(this), flexWidth + ' ' + flexWidth + ' 0px');
+
+      // layout each chart
+      rows.each(function(index) {
+
+        // perform the layout
+        var result = layoutChart($(this), false);
+
+        // ice the notes if there are none
+        if (!result.notes)
+          $(this).find('.chart-notes').remove();
+
+        // set flex height based on figHeight, then adjust
+        if (result.flex) {
+          var chartHeight = figureSizes[index].height;
+          chartHeight = adjustedHeight(chartHeight, $(this));
+          if (fillPage)
+            setFlex($(this), chartHeight + ' ' + chartHeight + ' 0px');
+          else {
+            $(this).css('height', chartHeight + 'px');
+            setFlex($(this), chartHeight + ' ' + chartHeight + ' ' + chartHeight + 'px');
+          }
+        }
+      });
+    });
+  }
+
+  function chartFigureSizes(charts) {
+
+    // sizes
+    var figureSizes = new Array(charts.length);
+
+    // check each chart
+    charts.each(function(index) {
+
+      // start with default
+      figureSizes[index] = {
+        width: _options.defaultFigWidth,
+        height: _options.defaultFigHeight
+      };
+
+      // look for data-height or data-width then knit options
+      var dataWidth = parseInt($(this).attr('data-width'));
+      var dataHeight = parseInt($(this).attr('data-height'));
+      var knitrOptions = $(this).find('.knitr-options:first');
+      var knitrWidth, knitrHeight;
+      if (knitrOptions) {
+        knitrWidth = parseInt(knitrOptions.attr('data-fig-width'));
+        knitrHeight =  parseInt(knitrOptions.attr('data-fig-height'));
+      }
+
+      // width
+      if (dataWidth)
+        figureSizes[index].width = dataWidth;
+      else if (knitrWidth)
+        figureSizes[index].width = knitrWidth;
+
+      // height
+      if (dataHeight)
+        figureSizes[index].height = dataHeight;
+      else if (knitrHeight)
+        figureSizes[index].height = knitrHeight;
+    });
+
+    // return sizes
+    return figureSizes;
+  }
+
+  function maxChartHeight(figureSizes, charts) {
+
+    // first compute the maximum height
+    var maxHeight = _options.defaultFigHeight;
+    for (var i = 0; i<figureSizes.length; i++)
+      if (figureSizes[i].height > maxHeight)
+        maxHeight = figureSizes[i].height;
+
+    // now add offests for chart title and chart notes
+    if (charts.length)
+      maxHeight = adjustedHeight(maxHeight, charts.first());
+
+    return maxHeight;
+  }
+
+  function adjustedHeight(height, chart) {
+    if (chart.length > 0) {
+      var chartTitle = chart.find('.chart-title');
+      if (chartTitle.length)
+        height += chartTitle.first().outerHeight();
+      var chartNotes = chart.find('.chart-notes');
+      if (chartNotes.length)
+        height += chartNotes.first().outerHeight();
+    }
+    return height;
+  }
+
+  function maxChartWidth(figureSizes) {
+    var maxWidth = _options.defaultFigWidth;
+    for (var i = 0; i<figureSizes.length; i++)
+      if (figureSizes[i].width > maxWidth)
+        maxWidth = figureSizes[i].width;
+    return maxWidth;
+  }
+
+  // layout a chart
+  function layoutChart(chart, forceFlex) {
+
+    // state to return
+    var result = {
+      notes: false,
+      flex: false
+    };
+
+    // extract the title
+    var title = extractTitle(chart);
+
+    // find components that apply to this container
+    var components = componentsFind(chart);
+
+    // if it's a custom component then call it and return
+    var customComponents = componentsCustom(components);
+    if (customComponents.length) {
+      componentsLayout(customComponents, title, chart);
+      result.notes = false;
+      result.flex = forceFlex || componentsFlex(customComponents);
+      return result;
+    }
+
+    // put all the content in a chart wrapper div
+    chart.addClass('chart-wrapper');
+    chart.wrapInner('<div class="chart-stage"></div>');
+    var chartContent = chart.children('.chart-stage');
+
+    // flex the content if appropriate
+    result.flex = forceFlex || componentsFlex(components);
+    if (result.flex) {
+      // add flex classes
+      chart.addClass('chart-wrapper-flex');
+      chartContent.addClass('chart-stage-flex');
+
+      // additional shim to break out of flexbox sizing
+      chartContent.wrapInner('<div class="chart-shim"></div>');
+      chartContent = chartContent.children('.chart-shim');
+    }
+
+    // set custom data-padding attribute
+    var pad = chart.attr('data-padding');
+    if (pad) {
+      if (pad === "0")
+        chart.addClass('no-padding');
+      else {
+        pad = pad + 'px';
+        chartContent.css('left', pad)
+                    .css('top', pad)
+                    .css('right', pad)
+                    .css('bottom', pad)
+      }
+    }
+
+    // call compoents
+    componentsLayout(components, title, chartContent);
+
+    // also activate components on shiny output
+    findShinyOutput(chartContent).on('shiny:value',
+      function(event) {
+        var element = $(event.target);
+        setTimeout(function() {
+
+          // see if we opted out of flex based on our output (for shiny
+          // we can't tell what type of output we have until after the
+          // value is bound)
+          var components = componentsFind(element);
+          var flex = forceFlex || componentsFlex(components);
+          if (!flex) {
+            chart.css('height', "");
+            setFlex(chart, "");
+            chart.removeClass('chart-wrapper-flex');
+            chartContent.removeClass('chart-stage-flex');
+            chartContent.children().unwrap();
+          }
+
+          // perform layout
+          componentsLayout(components, title, element.parent());
+        }, 10);
+      });
+
+    // add the title
+    var chartTitle = $('<div class="chart-title"></div>');
+    chartTitle.append(title);
+    chart.prepend(chartTitle);
+
+    // add the notes section
+    var chartNotes = $('<div class="chart-notes"></div>');
+    chartNotes.html('&nbsp;');
+    chart.append(chartNotes);
+
+    // attempt to extract notes if we have a component
+    if (components.length)
+      result.notes = extractChartNotes(chartContent, chartNotes);
+
+    // return result
+    return result;
+  }
+
+  // build a tabset from a section div with the .tabset class
+  function layoutTabset(tabset) {
+
+    // check for fade option
+    var fade = tabset.hasClass("tabset-fade");
+    var pills = tabset.hasClass("tabset-pills");
+    var navClass = pills ? "nav-pills" : "nav-tabs";
+
+    // determine the heading level of the tabset and tabs
+    var match = tabset.attr('class').match(/level(\d) /);
+    if (match === null)
+      return;
+    var tabsetLevel = Number(match[1]);
+    var tabLevel = tabsetLevel + 1;
+
+    // find all subheadings immediately below
+    var tabs = tabset.find("div.section.level" + tabLevel);
+    if (!tabs.length)
+      return;
+
+    // create tablist and tab-content elements
+    var tabList = $('<ul class="nav ' + navClass + '" role="tablist"></ul>');
+    $(tabs[0]).before(tabList);
+    var tabContent = $('<div class="tab-content"></div>');
+    $(tabs[0]).before(tabContent);
+
+    // build the tabset
+    var activeTab = 0;
+    tabs.each(function(i) {
+
+      // get the tab div
+      var tab = $(tabs[i]);
+
+      // get the id then sanitize it for use with bootstrap tabs
+      var id = tab.attr('id');
+
+      // see if this is marked as the active tab
+      if (tab.hasClass('active'))
+        activeTab = i;
+
+      // sanitize the id for use with bootstrap tabs
+      id = id.replace(/[.\/?&!#<>]/g, '').replace(/\s/g, '_');
+      tab.attr('id', id);
+
+      // get the heading element within it and grab it's text
+      var heading = tab.find('h' + tabLevel + ':first');
+      var headingDom = heading.contents();
+
+      // build and append the tab list item
+      var a = $('<a role="tab" data-toggle="tab" data-bs-toggle="tab" class="nav-link"></a>');
+      a.append(headingDom);
+      a.attr('href', '#' + id);
+      a.attr('aria-controls', id);
+      var li = $('<li role="presentation" class="nav-item"></li>');
+      li.append(a);
+      tabList.append(li);
+
+      // set it's attributes
+      tab.attr('role', 'tabpanel');
+      tab.addClass('tab-pane');
+      tab.addClass('tabbed-pane');
+      tab.addClass('no-title');
+      if (fade)
+        tab.addClass('fade');
+
+      // move it into the tab content div
+      tab.detach().appendTo(tabContent);
+    });
+
+    // set active tab
+    $(tabList.children()[activeTab]).tab("show");
+    var active = $(tabContent.children('div.section')[activeTab]);
+    active.addClass('active');
+    if (fade)
+      active.addClass('in');
+
+    // add nav-tabs-custom
+    tabset.addClass('nav-tabs-custom');
+
+    // internal layout is dashboard-column with tab-content flexing
+    tabset.addClass('dashboard-column');
+    setFlex(tabContent, 1);
+  }
+
+  // one time global initialization for components
+  function componentsInit(dashboardContainer) {
+    for (var i=0; i<window.FlexDashboardComponents.length; i++) {
+      var component = window.FlexDashboardComponents[i];
+      if (component.init)
+        component.init(dashboardContainer);
+    }
+  }
+
+  // find components that apply within a container
+  function componentsFind(container) {
+
+    // look for components
+    var components = [];
+    for (var i=0; i<window.FlexDashboardComponents.length; i++) {
+      var component = window.FlexDashboardComponents[i];
+      if (component.find(container).length)
+        components.push(component);
+    }
+
+    // if there were none then use a special flowing content component
+    // that just adds a scrollbar in fillPage mode
+    if (components.length == 0) {
+      components.push({
+        find: function(container) {
+          return container;
+        },
+
+        flex: function(fillPage) {
+          return fillPage;
+        },
+
+        layout: function(title, container, element, fillPage) {
+          if (fillPage) {
+            container.addClass('flowing-content-shim');
+            container.addClass('flowing-content-container');
+          }
+        }
+      });
+    }
+
+    return components;
+  }
+
+  // if there is a custom component then pick it out
+  function componentsCustom(components) {
+    var customComponent = [];
+    for (var i=0; i<components.length; i++)
+      if (components[i].type === "custom") {
+        customComponent.push(components[i]);
+        break;
+      }
+    return customComponent;
+  }
+
+  // query all components for flex
+  function componentsFlex(components) {
+
+    // no components at all means no flex
+    if (components.length === 0)
+      return false;
+
+    // otherwise query components (assume true unless we see false)
+    var isMobile = isMobilePhone();
+    for (var i=0; i<components.length; i++)
+      if (components[i].flex && !components[i].flex(_options.fillPage))
+        return false;
+    return true;
+  }
+
+  // layout all components
+  function componentsLayout(components, title, container) {
+    var isMobile = isMobilePhone();
+    for (var i=0; i<components.length; i++) {
+      var element = components[i].find(container);
+      if (components[i].layout) {
+        // call layout (don't call other components if it returns false)
+        var result = components[i].layout(title, container, element, _options.fillPage);
+        if (result === false)
+          return;
+      }
+    }
+  }
+
+  // get a reference to the h3, discover it's inner html, and remove it
+  function extractTitle(container) {
+    var h3 = container.children('h3').first();
+    var title = '';
+    if (!container.hasClass('no-title'))
+      title = h3.contents();
+    h3.detach();
+    return title;
+  }
+
+  // extract chart notes
+  function extractChartNotes(chartContent, chartNotes) {
+    // look for a terminating blockquote or image caption
+    var blockquote = chartContent.children('blockquote:last-child');
+    var caption = chartContent.children('div.image-container')
+                              .children('p.caption');
+    if (blockquote.length) {
+      chartNotes.empty().append(blockquote.children('p:first-child').contents());
+      blockquote.remove();
+      return true;
+    } else if (caption.length) {
+      chartNotes.empty().append(caption.contents());
+      caption.remove();
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  function findShinyOutput(chartContent) {
+    return chartContent.find('.shiny-text-output, .shiny-html-output');
+  }
+
+  // safely detect rendering on a mobile phone
+  function isMobilePhone() {
+    try
+    {
+      return ! window.matchMedia("only screen and (min-width: 768px)").matches;
+    }
+    catch(e) {
+      return false;
+    }
+  }
+
+  function isFillPage() {
+    return _options.fillPage;
+  }
+
+  // detect portrait mode
+  function isPortrait() {
+    return ($(window).width() < $(window).height());
+  }
+
+  // safely detect rendering on a tablet
+  function isTablet() {
+    try
+    {
+      return window.matchMedia("only screen and (min-width: 769px) and (max-width: 992px)").matches;
+    }
+    catch(e) {
+      return false;
+    }
+  }
+
+  // test whether this is a shiny doc
+  function isShinyDoc() {
+    return (typeof(window.Shiny) !== "undefined" && !!window.Shiny.outputBindings);
+  }
+
+  // set flex using vendor specific prefixes
+  function setFlex(el, flex) {
+    el.css('-webkit-box-flex', flex)
+      .css('-webkit-flex', flex)
+      .css('-ms-flex', flex)
+      .css('flex', flex);
+  }
+
+  // support bookmarking of pages
+  function handleLocationHash() {
+
+    // restore tab/page from bookmark
+    var hash = window.decodeURIComponent(window.location.hash);
+    if (hash.length > 0) {
+      // Update the tab without .showPage() so that we don't change page history
+      $('ul.nav a[href="' + hash + '"]').tab('show');
+    }
+
+    // navigate to a tab when the history changes
+    window.addEventListener("popstate", function(e) {
+      var hash = window.decodeURIComponent(window.location.hash);
+      var activeTab = $('ul.nav a[href="' + hash + '"]');
+      if (activeTab.length) {
+        activeTab.tab('show');
+      } else {
+        // returning to the base page URL without a hash activates first tab
+        $('ul.nav a:first').tab('show');
+      }
+    });
+
+    // add a hash to the URL when the user clicks on a tab/page
+    $('.navbar-nav a[data-toggle="tab"]').on('click', function(e) {
+      var baseUrl = FlexDashboardUtils.urlWithoutHash(window.location.href);
+      var hash = FlexDashboardUtils.urlHash($(this).attr('href'));
+      var href = baseUrl + hash;
+      FlexDashboardUtils.setLocation(href);
+    });
+
+    // handle clicks of other links that should activate pages
+    var navPages = $('ul.navbar-nav li a[data-toggle=tab]');
+    navPages.each(function() {
+      var href =  $(this).attr('href');
+      var links = $('a[href="' + href + '"][data-toggle!=tab]');
+      links.each(function() {
+        $(this).on('click', function(e) {
+          window.FlexDashboardUtils.showPage(href);
+        });
+      });
+    });
+  }
+
+  // tweak Prism highlighting
+  function initPrismHighlighting() {
+
+    if (window.Prism) {
+      Prism.languages.insertBefore('r', 'comment', {
+        'heading': [
+          {
+            // title 1
+        	  // =======
+
+        	  // title 2
+        	  // -------
+        	  pattern: /\w+.*(?:\r?\n|\r)(?:====+|----+)/,
+            alias: 'operator'
+          },
+          {
+            // ### title 3
+            pattern: /(^\s*)###[^#].+/m,
+            lookbehind: true,
+            alias: 'operator'
+          }
+        ]
+      });
+
+      // prism highlight
+      Prism.highlightAll();
+    }
+  }
+
+  FlexDashboard.prototype = {
+    constructor: FlexDashboard,
+    init: init,
+    isMobilePhone: isMobilePhone,
+    isFillPage: isFillPage
+  };
+
+  return FlexDashboard;
+
+})();
+
+// utils
+window.FlexDashboardUtils = {
+  resizableImage: function(img) {
+    var src = img.attr('src');
+    var url = 'url("' + src + '")';
+    img.parent().css('background', url)
+                .css('background-size', 'contain')
+                .css('background-repeat', 'no-repeat')
+                .css('background-position', 'center')
+                .addClass('image-container');
+  },
+  setLocation: function(href) {
+    if (history && history.pushState) {
+      history.pushState(null, null, href);
+    } else {
+      window.location.replace(href);
+    }
+    setTimeout(function() {
+        window.scrollTo(0, 0);
+    }, 10);
+  },
+  showPage: function(href) {
+    $('ul.navbar-nav li a[href="' + href + '"]').tab('show');
+    var baseUrl = this.urlWithoutHash(window.location.href);
+    var loc = baseUrl + href;
+    this.setLocation(loc);
+  },
+  showLinkedValue: function(href) {
+    // check for a page link
+    if ($('ul.navbar-nav li a[data-toggle=tab][href="' + href + '"]').length > 0)
+      this.showPage(href);
+    else
+      window.open(href);
+  },
+  urlWithoutHash: function(url) {
+    var hashLoc = url.indexOf('#');
+    if (hashLoc != -1)
+      return url.substring(0, hashLoc);
+    else
+      return url;
+  },
+  urlHash: function(url) {
+    var hashLoc = url.indexOf('#');
+    if (hashLoc != -1)
+      return url.substring(hashLoc);
+    else
+      return "";
+  }
+};
+
+window.FlexDashboard = new FlexDashboard();
+
+// empty content
+window.FlexDashboardComponents.push({
+  find: function(container) {
+    if (container.find('p').length == 0)
+      return container;
+    else
+      return $();
+  }
+})
+
+// plot image
+window.FlexDashboardComponents.push({
+
+  find: function(container) {
+    return container.children('p')
+                    .children('img:only-child');
+  },
+
+  layout: function(title, container, element, fillPage) {
+    FlexDashboardUtils.resizableImage(element);
+  }
+});
+
+// plot image (figure style)
+window.FlexDashboardComponents.push({
+
+  find: function(container) {
+    return container.children('div.figure').children('img');
+  },
+
+  layout: function(title, container, element, fillPage) {
+    FlexDashboardUtils.resizableImage(element);
+  }
+});
+
+// htmlwidget
+window.FlexDashboardComponents.push({
+
+  init: function(dashboardContainer) {
+    // trigger "shown" after initial layout to force static htmlwidgets
+    // in runtime: shiny to be resized after the dom has been transformed
+    dashboardContainer.on('flexdashboard:layoutcomplete', function(event) {
+      setTimeout(function() {
+        dashboardContainer.trigger('shown');
+      }, 200);
+    });
+  },
+
+  find: function(container) {
+    return container.children('div[id^="htmlwidget-"],div.html-widget');
+  }
+});
+
+// gauge
+window.FlexDashboardComponents.push({
+
+  find: function(container) {
+    return container.children('div.html-widget.gauge');
+  },
+
+  flex: function(fillPage) {
+    return false;
+  },
+
+  layout: function(title, container, element, fillPage) {
+
+
+  }
+
+});
+
+// shiny output
+window.FlexDashboardComponents.push({
+  find: function(container) {
+    return container.children('div[class^="shiny-"]');
+  }
+});
+
+// bootstrap table
+window.FlexDashboardComponents.push({
+
+  find: function(container) {
+    var bsTable = container.find('table.table');
+    if (bsTable.length !== 0)
+      return bsTable;
+    else
+      return container.find('tr.header').parent('thead').parent('table');
+  },
+
+  flex: function(fillPage) {
+    return fillPage;
+  },
+
+  layout: function(title, container, element, fillPage) {
+
+    // alias variables
+    var bsTable = element;
+
+    // fixup xtable generated tables with a proper thead
+    var headerRow = bsTable.find('tbody > tr:first-child > th').parent();
+    if (headerRow.length > 0) {
+      var thead = $('<thead></thead>');
+      bsTable.prepend(thead);
+      headerRow.detach().appendTo(thead);
+    }
+
+    // improve appearance
+    container.addClass('bootstrap-table');
+
+    // for fill page provide scrolling w/ sticky headers
+    if (fillPage) {
+      // force scrollbar on overflow
+      container.addClass('flowing-content-shim');
+
+      // stable table headers when scrolling
+      bsTable.stickyTableHeaders({
+        scrollableArea: container
+      });
+    }
+  }
+});
+
+// embedded shiny app
+window.FlexDashboardComponents.push({
+
+  find: function(container) {
+    return container.find('iframe.shiny-frame');
+  },
+
+  flex: function(fillPage) {
+    return fillPage;
+  },
+
+  layout: function(title, container, element, fillPage) {
+    if (fillPage) {
+      element.attr('height', '100%');
+    } else {
+      // provide default height if necessary
+      var height = element.get(0).style.height;
+      if (!height)
+        height = element.attr('height');
+      if (!height)
+        element.attr('height', 500);
+    }
+  }
+});
+
+// shiny fillRow or fillCol
+window.FlexDashboardComponents.push({
+
+  find: function(container) {
+    return container.find('.flexfill-container');
+  },
+
+  flex: function(fillPage) {
+    return fillPage;
+  },
+
+  layout: function(title, container, element, fillPage) {
+    if (fillPage)
+      element.css('height', '100%');
+    else {
+      // provide default height if necessary
+      var height = element.get(0).style.height;
+      if (height === "100%" || height === "auto" || height === "initial" ||
+          height === "inherit" || !height) {
+        element.css('height', 500);
+      }
+    }
+  }
+});
+
+// valueBox
+window.FlexDashboardComponents.push({
+
+  type: "custom",
+
+  find: function(container) {
+    if (container.find('span.value-output, .shiny-valuebox-output').length)
+      return container;
+    else
+      return $();
+  },
+
+  flex: function(fillPage) {
+    return false;
+  },
+
+  layout: function(title, container, element, fillPage) {
+
+    // alias variables
+    var chartTitle = title;
+    var valueBox = element;
+
+    // add value-box class to container
+    container.addClass('value-box');
+
+    // value paragraph
+    var value = $('<p class="value"></p>');
+
+    // if we have shiny-text-output then just move it in
+    var valueOutputSpan = [];
+    var shinyOutput = valueBox.find('.shiny-valuebox-output').detach();
+    if (shinyOutput.length) {
+      valueBox.children().remove();
+      shinyOutput.html("&mdash;");
+      value.append(shinyOutput);
+    } else {
+      // extract the value (remove leading vector index)
+      var chartValue = valueBox.text().trim();
+      chartValue = chartValue.replace("[1] ", "");
+      valueOutputSpan = valueBox.find('span.value-output').detach();
+      valueBox.children().remove();
+      value.text(chartValue);
+    }
+
+    // caption
+    var caption = $('<p class="caption"></p>');
+    caption.append(chartTitle);
+
+    // build inner div for value box and add it
+    var inner = $('<div class="inner"></div>');
+    inner.append(value);
+    inner.append(caption);
+    valueBox.append(inner);
+
+    // add icon if specified
+    var icon = $('<div class="icon"><i></i></div>');
+    valueBox.append(icon);
+    function setIcon(chartIcon) {
+      var iconLib = "";
+      var iconSplit = chartIcon.split(" ");
+      if (iconSplit.length > 1) {
+        iconLib = iconSplit[0];
+        chartIcon = iconSplit.slice(1).join(" ");
+      } else {
+        var components = chartIcon.split("-");
+        if (components.length > 1)
+          iconLib = components[0];
+      }
+      icon.children('i').attr('class', iconLib + ' ' + chartIcon);
+    }
+    var chartIcon = valueBox.attr('data-icon');
+    if (chartIcon)
+      setIcon(chartIcon);
+
+    // handle data attributes in valueOutputSpan
+    function handleValueOutput(valueOutput) {
+
+      // caption
+      var dataCaption = valueOutput.attr('data-caption');
+      if (dataCaption)
+        caption.html(dataCaption);
+
+      // icon
+      var dataIcon = valueOutput.attr('data-icon');
+      if (dataIcon)
+        setIcon(dataIcon);
+
+      // If valueBox(color=) was an accent color, this attr should
+      // be populated with the accent color and the relevant CSS comes
+      // in through HTML dependencies
+      var dataColorAccent = valueOutput.attr('data-color-accent');
+      var valueBoxClasses = "value-box-" + (["primary", "info", "danger", "warning", "success"].join(" value-box-"));
+      if (dataColorAccent) {
+        valueBox.removeClass(valueBoxClasses);
+        valueBox.addClass('value-box-' + dataColorAccent);
+      }
+
+      // If valueBox(color=) was a CSS color, these other data-color-*
+      // attrs will be populated
+      var dataColor = valueOutput.attr('data-color');
+      if (dataColor) {
+        valueBox.removeClass(valueBoxClasses);
+        valueBox.css('background-color', dataColor);
+      }
+      var dataColorText = valueOutput.attr('data-color-text');
+      if (dataColorText) {
+        valueBox.find(".inner").css('color', dataColorText);
+      }
+      var dataColorIcon = valueOutput.attr('data-color-icon');
+      if (dataColorIcon) {
+        valueBox.find(".icon").css('color', dataColorIcon);
+      }
+
+      // url
+      var dataHref = valueOutput.attr('data-href');
+      if (dataHref) {
+        valueBox.addClass('linked-value');
+        valueBox.off('click.value-box');
+        valueBox.on('click.value-box', function(e) {
+          window.FlexDashboardUtils.showLinkedValue(dataHref);
+        });
+      }
+    }
+
+    // check for a valueOutputSpan
+    if (valueOutputSpan.length > 0) {
+      handleValueOutput(valueOutputSpan);
+    }
+
+    // if we have a shinyOutput then bind a listener to handle
+    // new valueOutputSpan values
+    shinyOutput.on('shiny:value',
+      function(event) {
+        var element = $(event.target);
+        setTimeout(function() {
+          var valueOutputSpan = element.find('span.value-output');
+          if (valueOutputSpan.length > 0)
+            handleValueOutput(valueOutputSpan);
+        }, 10);
+      }
+    );
+  }
+});
+</script>
+
+<div id="dashboard-container">
+
+<div id="ringkasan" class="section level1">
+<h1>Ringkasan</h1>
+<div id="row" class="section level2">
+<h2>Row</h2>
+<div id="pendaftar" class="section level3 value-box">
+<h3 class="value-box">pendaftar</h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<span class="value-output" data-caption="Pendaftar di Untirta" data-icon="fas fa-clipboard-check" data-color="#000000" data-color-text="#fff" data-color-icon="#0d0d0d">0 </span>
+</div>
+<div id="lulus" class="section level3 value-box">
+<h3 class="value-box">lulus</h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<span class="value-output" data-caption="Lulus SMMPTN" data-icon="fas fa-clipboard-check" data-color="#800080" data-color-text="#fff" data-color-icon="#4d0d4d">312 </span>
+</div>
+<div id="laki-laki" class="section level3 value-box">
+<h3 class="value-box">laki-laki</h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<span class="value-output" data-caption="Laki-Laki" data-icon="fas fa-male" data-color="#0000FF" data-color-text="#fff" data-color-icon="#0d0d8d">138 (44%)</span>
+</div>
+<div id="perempuan" class="section level3 value-box">
+<h3 class="value-box">perempuan</h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<span class="value-output" data-caption="Perempuan" data-icon="fas fa-female" data-color="#FFC0CB" data-color-text="#1a1a1a" data-color-icon="#ffe0e5">174 (56%)</span>
+</div>
+</div>
+<div id="row-1" class="section level2">
+<h2>Row</h2>
+<div id="verifikasi" class="section level3 value-box">
+<h3 class="value-box">verifikasi</h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<span class="value-output" data-caption="Registrasi" data-icon="fas fa-thumbs-up" data-color="#008000" data-color-text="#1a1a1a" data-color-icon="#80c080">167  ( 54 % )</span>
+</div>
+<div id="belum" class="section level3 value-box">
+<h3 class="value-box">belum</h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<span class="value-output" data-caption="Belum Registrasi Berkas" data-icon="fas fa-file-upload" data-color="#A52A2A" data-color-text="#fff" data-color-icon="#602222">145  ( 46 % )</span>
+</div>
+<div id="sudah_ukt" class="section level3 value-box">
+<h3 class="value-box">sudah_ukt</h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<span class="value-output" data-caption="Registrasi UKT" data-icon="fas fa-thumbs-up" data-color="#6495ED" data-color-text="#1a1a1a" data-color-icon="#b2caf6">0  ( 0 % )</span>
+</div>
+<div id="tidak_ukt" class="section level3 value-box">
+<h3 class="value-box">tidak_ukt</h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<span class="value-output" data-caption="Belum Registrasi UKT" data-icon="fas fa-file-upload" data-color="#A52A2A" data-color-text="#fff" data-color-icon="#602222">167  ( 54 % )</span>
+</div>
+</div>
+<div id="row-2" class="section level2">
+<h2>Row</h2>
+<div id="sebaran-camaba-di-tiap-fakultas" class="section level3">
+<h3><strong>Sebaran camaba di tiap fakultas</strong></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<div align="center">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-7923836140ad5643351e" style="width:100%;height:400px;"></div>
+<script type="application/json" data-for="htmlwidget-7923836140ad5643351e">{"x":{"visdat":{"3ee444c2eba":["function () ","plotlyVisDat"]},"cur_data":"3ee444c2eba","attrs":{"3ee444c2eba":{"x":{},"y":{},"name":"Laki-Laki","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"},"3ee444c2eba.1":{"x":{},"y":{},"name":"Perempuan","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"yaxis":{"domain":[0,1],"automargin":true,"title":" "},"barmode":"group","xaxis":{"domain":[0,1],"automargin":true,"title":"Fakultas","type":"category","categoryorder":"array","categoryarray":["Hukum","FKIP","Teknik","Pertanian","FEB","FISIP","Kedokteran"]},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":["Hukum","FKIP","Teknik","Pertanian","FEB","FISIP","Kedokteran"],"y":[13,29,38,27,17,11,3],"name":"Laki-Laki","type":"bar","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Hukum","FKIP","Teknik","Pertanian","FEB","FISIP","Kedokteran"],"y":[12,64,16,26,32,19,5],"name":"Perempuan","type":"bar","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div id="sebaran-camaba-di-tiap-fakultas-1" class="section level3">
+<h3><strong>Sebaran camaba di tiap fakultas</strong></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Jenis Kelamin
+</div>
+</th>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+Fakultas
+</th>
+<th style="text-align:right;">
+Laki-Laki
+</th>
+<th style="text-align:right;">
+Perempuan
+</th>
+<th style="text-align:right;">
+JML
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Hukum
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+25
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FKIP
+</td>
+<td style="text-align:right;">
+29
+</td>
+<td style="text-align:right;">
+64
+</td>
+<td style="text-align:right;">
+93
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Teknik
+</td>
+<td style="text-align:right;">
+38
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+54
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pertanian
+</td>
+<td style="text-align:right;">
+27
+</td>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:right;">
+53
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FEB
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+32
+</td>
+<td style="text-align:right;">
+49
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FISIP
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:right;">
+30
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Kedokteran
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+8
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JML
+</td>
+<td style="text-align:right;">
+138
+</td>
+<td style="text-align:right;">
+174
+</td>
+<td style="text-align:right;">
+312
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="row-3" class="section level2">
+<h2>Row</h2>
+<div id="camaba-berdasarkan-kategori-sekolah-asal"
+class="section level3">
+<h3><strong>Camaba berdasarkan kategori sekolah asal</strong></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<div align="center">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-6817822d7cc194a10e0e" style="width:100%;height:400px;"></div>
+<script type="application/json" data-for="htmlwidget-6817822d7cc194a10e0e">{"x":{"visdat":{"3ee417cf5d6c":["function () ","plotlyVisDat"]},"cur_data":"3ee417cf5d6c","attrs":{"3ee417cf5d6c":{"labels":["Negeri","Swasta"],"values":[215,97],"textinfo":"label+percent","insidetextorientation":"radial","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"pie"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"labels":["Negeri","Swasta"],"values":[215,97],"textinfo":"label+percent","insidetextorientation":"radial","type":"pie","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(255,255,255,1)"}},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div id="camaba-berdasarkan-jenis-sekolah-asal" class="section level3">
+<h3><strong>Camaba berdasarkan jenis sekolah asal</strong></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<div align="center">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-8e3c4d8a5807a67c120e" style="width:100%;height:400px;"></div>
+<script type="application/json" data-for="htmlwidget-8e3c4d8a5807a67c120e">{"x":{"visdat":{"3ee44ddd2d2":["function () ","plotlyVisDat"]},"cur_data":"3ee44ddd2d2","attrs":{"3ee44ddd2d2":{"labels":["MA","SMA","SMK","SMTA"],"values":[42,213,33,24],"textinfo":"label+percent","insidetextorientation":"radial","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"pie"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"labels":["MA","SMA","SMK","SMTA"],"values":[42,213,33,24],"textinfo":"label+percent","insidetextorientation":"radial","type":"pie","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(255,255,255,1)"}},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div id="camaba-berdasarkan-tahun-lulus-dan-pilihan-program-studi"
+class="section level3">
+<h3><strong>Camaba berdasarkan tahun lulus dan pilihan program
+studi</strong></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<div align="center">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-12000576667f9a49cd72" style="width:100%;height:400px;"></div>
+<script type="application/json" data-for="htmlwidget-12000576667f9a49cd72">{"x":{"visdat":{"3ee43d064eed":["function () ","plotlyVisDat"]},"cur_data":"3ee43d064eed","attrs":{"3ee43d064eed":{"x":{},"y":{},"name":"Pilihan 1","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"},"3ee43d064eed.1":{"x":{},"y":{},"name":"Pilihan 2","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"yaxis":{"domain":[0,1],"automargin":true,"title":" "},"barmode":"group","xaxis":{"domain":[0,1],"automargin":true,"title":"`Tahun Lulus`"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"type":"bar","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"type":"bar","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<!-- ### **Camaba berdasarkan penghasilan orang tua** -->
+<!-- ```{r} -->
+<!-- data <- db %>% -->
+<!--   group_by(penghasilan, jk) %>% -->
+<!--   summarize(tot = n()) -->
+<!-- data <- data %>% -->
+<!--   pivot_wider(names_from = jk, values_from = tot) -->
+<!-- data[is.na(data)] <- 0 -->
+<!-- names(data) <- c("Penghasilan", "Laki-Laki", "Perempuan") -->
+<!-- #data$Pendidikan <- c("SD", "SLTP", "SLTA", "D3", "S1", "S2", "S3", "Tidak ada") -->
+<!-- data <- adorn_totals(data, where = c("col", "row"), name = "JML") -->
+<!-- kable(data) %>% -->
+<!--   kable_styling(bootstrap_options = "striped", full_width = F, -->
+<!--                 latex_options = "scale_down") %>% -->
+<!--   add_header_above(c(" " = 1, "Jenis Kelamin" = 2, " " = 1)) -->
+<!-- ``` -->
+</div>
+</div>
+<div id="row-4" class="section level2">
+<h2>Row</h2>
+<div id="statistik-keketatan-program-studi" class="section level3">
+<h3><strong>Statistik Keketatan Program Studi</strong></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="6">
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Pilihan 1
+</div>
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Pilihan 2
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:right;">
+No
+</th>
+<th style="text-align:left;">
+Program Studi
+</th>
+<th style="text-align:left;">
+Jenjang
+</th>
+<th style="text-align:right;">
+Peminat
+</th>
+<th style="text-align:right;">
+Diterima
+</th>
+<th style="text-align:right;">
+Keketatan (%)
+</th>
+<th style="text-align:right;">
+Peminat
+</th>
+<th style="text-align:right;">
+% Peminat
+</th>
+<th style="text-align:right;">
+Peminat
+</th>
+<th style="text-align:right;">
+% Peminat
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+KEDOKTERAN
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+384
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+0.8
+</td>
+<td style="text-align:right;">
+192
+</td>
+<td style="text-align:right;">
+50.0
+</td>
+<td style="text-align:right;">
+192
+</td>
+<td style="text-align:right;">
+50.0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+GIZI
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+121
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+2.5
+</td>
+<td style="text-align:right;">
+62
+</td>
+<td style="text-align:right;">
+51.2
+</td>
+<td style="text-align:right;">
+59
+</td>
+<td style="text-align:right;">
+48.8
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+KEPERAWATAN
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+121
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+3.3
+</td>
+<td style="text-align:right;">
+85
+</td>
+<td style="text-align:right;">
+70.2
+</td>
+<td style="text-align:right;">
+36
+</td>
+<td style="text-align:right;">
+29.8
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+TEKNIK INDUSTRI
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+279
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+3.6
+</td>
+<td style="text-align:right;">
+157
+</td>
+<td style="text-align:right;">
+56.3
+</td>
+<td style="text-align:right;">
+122
+</td>
+<td style="text-align:right;">
+43.7
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+MANAJEMEN
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+328
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+3.7
+</td>
+<td style="text-align:right;">
+191
+</td>
+<td style="text-align:right;">
+58.2
+</td>
+<td style="text-align:right;">
+137
+</td>
+<td style="text-align:right;">
+41.8
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:left;">
+INFORMATIKA
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+216
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+3.7
+</td>
+<td style="text-align:right;">
+139
+</td>
+<td style="text-align:right;">
+64.4
+</td>
+<td style="text-align:right;">
+77
+</td>
+<td style="text-align:right;">
+35.6
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+ILMU KOMUNIKASI
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+324
+</td>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:right;">
+5.9
+</td>
+<td style="text-align:right;">
+163
+</td>
+<td style="text-align:right;">
+50.3
+</td>
+<td style="text-align:right;">
+161
+</td>
+<td style="text-align:right;">
+49.7
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:left;">
+AKUNTANSI
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+219
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+6.4
+</td>
+<td style="text-align:right;">
+112
+</td>
+<td style="text-align:right;">
+51.1
+</td>
+<td style="text-align:right;">
+107
+</td>
+<td style="text-align:right;">
+48.9
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+TEKNIK SIPIL
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+144
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+7.6
+</td>
+<td style="text-align:right;">
+92
+</td>
+<td style="text-align:right;">
+63.9
+</td>
+<td style="text-align:right;">
+52
+</td>
+<td style="text-align:right;">
+36.1
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:left;">
+ADMINISTRASI PUBLIK
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+206
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+8.3
+</td>
+<td style="text-align:right;">
+109
+</td>
+<td style="text-align:right;">
+52.9
+</td>
+<td style="text-align:right;">
+97
+</td>
+<td style="text-align:right;">
+47.1
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+ILMU PEMERINTAHAN
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+156
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+8.3
+</td>
+<td style="text-align:right;">
+58
+</td>
+<td style="text-align:right;">
+37.2
+</td>
+<td style="text-align:right;">
+98
+</td>
+<td style="text-align:right;">
+62.8
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+BIMBINGAN DAN KONSELING
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+84
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+8.3
+</td>
+<td style="text-align:right;">
+37
+</td>
+<td style="text-align:right;">
+44.0
+</td>
+<td style="text-align:right;">
+47
+</td>
+<td style="text-align:right;">
+56.0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:left;">
+TEKNIK ELEKTRO
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+107
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+9.3
+</td>
+<td style="text-align:right;">
+69
+</td>
+<td style="text-align:right;">
+64.5
+</td>
+<td style="text-align:right;">
+38
+</td>
+<td style="text-align:right;">
+35.5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:left;">
+HUKUM
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+353
+</td>
+<td style="text-align:right;">
+37
+</td>
+<td style="text-align:right;">
+10.5
+</td>
+<td style="text-align:right;">
+210
+</td>
+<td style="text-align:right;">
+59.5
+</td>
+<td style="text-align:right;">
+143
+</td>
+<td style="text-align:right;">
+40.5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:left;">
+PENDIDIKAN GURU SEKOLAH DASAR
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+74
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+10.8
+</td>
+<td style="text-align:right;">
+45
+</td>
+<td style="text-align:right;">
+60.8
+</td>
+<td style="text-align:right;">
+29
+</td>
+<td style="text-align:right;">
+39.2
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:left;">
+TEKNIK METALURGI
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+11.0
+</td>
+<td style="text-align:right;">
+60
+</td>
+<td style="text-align:right;">
+60.0
+</td>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:right;">
+40.0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:left;">
+TEKNIK MESIN
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+88
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+11.4
+</td>
+<td style="text-align:right;">
+41
+</td>
+<td style="text-align:right;">
+46.6
+</td>
+<td style="text-align:right;">
+47
+</td>
+<td style="text-align:right;">
+53.4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+EKONOMI PEMBANGUNAN
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+70
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+11.4
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:right;">
+25.7
+</td>
+<td style="text-align:right;">
+52
+</td>
+<td style="text-align:right;">
+74.3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:left;">
+TEKNOLOGI PANGAN
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+99
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+12.1
+</td>
+<td style="text-align:right;">
+54
+</td>
+<td style="text-align:right;">
+54.5
+</td>
+<td style="text-align:right;">
+45
+</td>
+<td style="text-align:right;">
+45.5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+TEKNIK KIMIA
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+84
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+13.1
+</td>
+<td style="text-align:right;">
+41
+</td>
+<td style="text-align:right;">
+48.8
+</td>
+<td style="text-align:right;">
+43
+</td>
+<td style="text-align:right;">
+51.2
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+21
+</td>
+<td style="text-align:left;">
+PENDIDIKAN BAHASA INGGRIS
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+76
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+14.5
+</td>
+<td style="text-align:right;">
+41
+</td>
+<td style="text-align:right;">
+53.9
+</td>
+<td style="text-align:right;">
+35
+</td>
+<td style="text-align:right;">
+46.1
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+22
+</td>
+<td style="text-align:left;">
+AGRIBISNIS
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+119
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:right;">
+15.1
+</td>
+<td style="text-align:right;">
+52
+</td>
+<td style="text-align:right;">
+43.7
+</td>
+<td style="text-align:right;">
+67
+</td>
+<td style="text-align:right;">
+56.3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+23
+</td>
+<td style="text-align:left;">
+PETERNAKAN
+</td>
+<td style="text-align:left;">
+S2
+</td>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+15.8
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+36.8
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+63.2
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+24
+</td>
+<td style="text-align:left;">
+ILMU KEOLAHRAGAAN
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+16.7
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+50.0
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+50.0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+25
+</td>
+<td style="text-align:left;">
+EKONOMI SYARIAH
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+53
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+17.0
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+18.9
+</td>
+<td style="text-align:right;">
+43
+</td>
+<td style="text-align:right;">
+81.1
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:left;">
+PENDIDIKAN SOSIOLOGI
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+28
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+17.9
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+17.9
+</td>
+<td style="text-align:right;">
+23
+</td>
+<td style="text-align:right;">
+82.1
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+27
+</td>
+<td style="text-align:left;">
+PENDIDIKAN SEJARAH
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+26.3
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+36.8
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+63.2
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+28
+</td>
+<td style="text-align:left;">
+AGROEKOTEKNOLOGI
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+69
+</td>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:right;">
+27.5
+</td>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:right;">
+37.7
+</td>
+<td style="text-align:right;">
+43
+</td>
+<td style="text-align:right;">
+62.3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+29
+</td>
+<td style="text-align:left;">
+PENDIDIKAN BAHASA INDONESIA
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+36
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+30.6
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+27.8
+</td>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:right;">
+72.2
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+30
+</td>
+<td style="text-align:left;">
+ILMU KELAUTAN
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+24
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+33.3
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+41.7
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+58.3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+31
+</td>
+<td style="text-align:left;">
+PENDIDIKAN PANCASILA DAN KEWARGANEGARAAN
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+35.7
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+35.7
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+64.3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+32
+</td>
+<td style="text-align:left;">
+PENDIDIKAN VOKASIONAL TEKNIK ELEKTRO
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+37.5
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+56.3
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+43.7
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+33
+</td>
+<td style="text-align:left;">
+PENDIDIKAN NON FORMAL
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+40.0
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+50.0
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+50.0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+34
+</td>
+<td style="text-align:left;">
+PENDIDIKAN IPA
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+41.7
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+41.7
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+58.3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+35
+</td>
+<td style="text-align:left;">
+PENDIDIKAN MATEMATIKA
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+22
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+50.0
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+45.5
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+54.5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+36
+</td>
+<td style="text-align:left;">
+ILMU PERIKANAN
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+29
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+51.7
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+31.0
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+69.0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+37
+</td>
+<td style="text-align:left;">
+PENDIDIKAN BIOLOGI
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+24
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+54.2
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+54.2
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+45.8
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+38
+</td>
+<td style="text-align:left;">
+PENDIDIKAN VOKASIONAL TEKNIK MESIN
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+60.0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+40.0
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+60.0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+39
+</td>
+<td style="text-align:left;">
+PENDIDIKAN FISIKA
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+62.5
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+50.0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+50.0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:left;">
+PENDIDIKAN KIMIA
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+66.7
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+33.3
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+66.7
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+41
+</td>
+<td style="text-align:left;">
+PENDIDIKAN GURU PENDIDIKAN ANAK USIA DINI
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+75.0
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+25.0
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+75.0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+42
+</td>
+<td style="text-align:left;">
+PENDIDIKAN KHUSUS
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+75.0
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+75.0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+25.0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+43
+</td>
+<td style="text-align:left;">
+PENDIDIKAN SENI PERTUNJUKAN
+</td>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+100.0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+40.0
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+60.0
+</td>
+</tr>
+</tbody>
+</table>
+<button class="btn btn-warning" onclick="&#10;    async function downloadFile(event) {&#10;      event.preventDefault();&#10;      try {&#10;        const response = await fetch(&#39;data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,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&#39;);&#10;        if (!response.ok) throw new Error(&#39;Network response failed&#39;);&#10;        const blob = await response.blob();&#10;        const blobUrl = window.URL.createObjectURL(blob);&#10;        const a = document.createElement(&#39;a&#39;);&#10;        a.href = blobUrl;&#10;        a.download = &#39;keketatan_prodi_smmptn_2022.xlsx&#39;;&#10;        a.style.display = &#39;none&#39;;&#10;        document.body.appendChild(a);&#10;        a.dispatchEvent(new MouseEvent(&#39;click&#39;));&#10;        document.body.removeChild(a);&#10;        setTimeout(() =&gt; {&#10;          window.URL.revokeObjectURL(blobUrl);&#10;        }, 100);&#10;        return false;&#10;      } catch (error) {&#10;        console.error(&#39;Download failed:&#39;, error);&#10;        alert(&#39;Download failed. Please try again.&#39;);&#10;      }&#10;    }&#10;    downloadFile(event);&#10;  " has_icon="TRUE"><i class="fa fa-save"></i> Download data</button>
+</div>
+<div id="camaba-berdasarkan-provinsi-asal" class="section level3">
+<h3><strong>Camaba berdasarkan Provinsi asal</strong></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Jenis Kelamin
+</div>
+</th>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+Provinsi
+</th>
+<th style="text-align:right;">
+Laki-Laki
+</th>
+<th style="text-align:right;">
+Perempuan
+</th>
+<th style="text-align:right;">
+JML
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Banten
+</td>
+<td style="text-align:right;">
+114
+</td>
+<td style="text-align:right;">
+135
+</td>
+<td style="text-align:right;">
+249
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Jawa Barat
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+22
+</td>
+<td style="text-align:right;">
+36
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DKI Jakarta
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+12
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Jawa Timur
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Jawa Tengah
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bengkulu
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DI Yogyakarta
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Kepulauan Riau
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Lampung
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sumatera Barat
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sumatera Selatan
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JML
+</td>
+<td style="text-align:right;">
+138
+</td>
+<td style="text-align:right;">
+174
+</td>
+<td style="text-align:right;">
+312
+</td>
+</tr>
+</tbody>
+</table>
+<button class="btn btn-warning" onclick="&#10;    async function downloadFile(event) {&#10;      event.preventDefault();&#10;      try {&#10;        const response = await fetch(&#39;data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,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&#39;);&#10;        if (!response.ok) throw new Error(&#39;Network response failed&#39;);&#10;        const blob = await response.blob();&#10;        const blobUrl = window.URL.createObjectURL(blob);&#10;        const a = document.createElement(&#39;a&#39;);&#10;        a.href = blobUrl;&#10;        a.download = &#39;camaba_per_prov.xlsx&#39;;&#10;        a.style.display = &#39;none&#39;;&#10;        document.body.appendChild(a);&#10;        a.dispatchEvent(new MouseEvent(&#39;click&#39;));&#10;        document.body.removeChild(a);&#10;        setTimeout(() =&gt; {&#10;          window.URL.revokeObjectURL(blobUrl);&#10;        }, 100);&#10;        return false;&#10;      } catch (error) {&#10;        console.error(&#39;Download failed:&#39;, error);&#10;        alert(&#39;Download failed. Please try again.&#39;);&#10;      }&#10;    }&#10;    downloadFile(event);&#10;  " has_icon="TRUE"><i class="fa fa-save"></i> Download data</button>
+</div>
+</div>
+</div>
+<div id="progres-registrasi" class="section level1">
+<h1>Progres Registrasi</h1>
+<div id="row-5" class="section level2">
+<h2>row</h2>
+<div id="progres-registrasi-di-setiap-fakultas" class="section level3">
+<h3><strong>Progres registrasi di setiap fakultas</strong></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-6626a7621817caba0e12" style="width:576px;height:460.8px;"></div>
+<script type="application/json" data-for="htmlwidget-6626a7621817caba0e12">{"x":{"visdat":{"3ee4504073c1":["function () ","plotlyVisDat"]},"cur_data":"3ee4504073c1","attrs":{"3ee4504073c1":{"x":{},"y":{},"name":"Total","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"},"3ee4504073c1.1":{"x":{},"y":{},"name":"registrasi","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true},"3ee4504073c1.2":{"x":{},"y":{},"name":"diterima","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"","yaxis":{"domain":[0,1],"automargin":true,"title":""},"xaxis":{"domain":[0,1],"automargin":true,"title":"Fakultas","type":"category","categoryorder":"array","categoryarray":["Hukum","FKIP","Teknik","Pertanian","FEB","FISIP","Kedokteran"]},"hovermode":"compare","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":["Hukum","FKIP","Teknik","Pertanian","FEB","FISIP","Kedokteran"],"y":[25,93,54,53,49,30,8],"name":"Total","type":"bar","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Hukum","FKIP","Teknik","Pertanian","FEB","FISIP","Kedokteran"],"y":[0,0,0,0,0,0,0],"name":"registrasi","type":"bar","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Hukum","FKIP","Teknik","Pertanian","FEB","FISIP","Kedokteran"],"y":[0,0,0,0,0,0,0],"name":"diterima","type":"bar","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="progres-registrasi-di-setiap-fakultas-1"
+class="section level3">
+<h3><strong>Progres registrasi di setiap fakultas</strong></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="4">
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Registrasi Online
+</div>
+</th>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+Fakultas
+</th>
+<th style="text-align:right;">
+Peminat
+</th>
+<th style="text-align:right;">
+Lulus
+</th>
+<th style="text-align:right;">
+% Lulus
+</th>
+<th style="text-align:right;">
+Sudah
+</th>
+<th style="text-align:right;">
+Belum
+</th>
+<th style="text-align:right;">
+Sudah (%)
+</th>
+<th style="text-align:right;">
+Belum (%)
+</th>
+<th style="text-align:right;">
+Diterima
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Hukum
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+25
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+25
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FKIP
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+93
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+93
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Teknik
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+54
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+54
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pertanian
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+53
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+53
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FEB
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+49
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+49
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FISIP
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+30
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+30
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Kedokteran
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Total
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+312
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+312
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+<button class="btn btn-warning" onclick="&#10;    async function downloadFile(event) {&#10;      event.preventDefault();&#10;      try {&#10;        const response = await fetch(&#39;data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,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&#39;);&#10;        if (!response.ok) throw new Error(&#39;Network response failed&#39;);&#10;        const blob = await response.blob();&#10;        const blobUrl = window.URL.createObjectURL(blob);&#10;        const a = document.createElement(&#39;a&#39;);&#10;        a.href = blobUrl;&#10;        a.download = &#39;progres_regis_per_fakultas.xlsx&#39;;&#10;        a.style.display = &#39;none&#39;;&#10;        document.body.appendChild(a);&#10;        a.dispatchEvent(new MouseEvent(&#39;click&#39;));&#10;        document.body.removeChild(a);&#10;        setTimeout(() =&gt; {&#10;          window.URL.revokeObjectURL(blobUrl);&#10;        }, 100);&#10;        return false;&#10;      } catch (error) {&#10;        console.error(&#39;Download failed:&#39;, error);&#10;        alert(&#39;Download failed. Please try again.&#39;);&#10;      }&#10;    }&#10;    downloadFile(event);&#10;  " has_icon="TRUE"><i class="fa fa-save"></i> Download data</button>
+</div>
+</div>
+<div id="row-6" class="section level2">
+<h2>row</h2>
+<div id="progres-registrasi-di-setiap-jenjang" class="section level3">
+<h3><strong>Progres registrasi di setiap Jenjang</strong></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="4">
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Registrasi
+</div>
+</th>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+Jenjang
+</th>
+<th style="text-align:right;">
+Peminat
+</th>
+<th style="text-align:right;">
+Lulus
+</th>
+<th style="text-align:right;">
+% Lulus
+</th>
+<th style="text-align:right;">
+Sudah
+</th>
+<th style="text-align:right;">
+Belum
+</th>
+<th style="text-align:right;">
+Sudah (%)
+</th>
+<th style="text-align:right;">
+Belum (%)
+</th>
+<th style="text-align:right;">
+Diterima
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+D3
+</td>
+<td style="text-align:right;">
+24
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+67
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+S1
+</td>
+<td style="text-align:right;">
+311
+</td>
+<td style="text-align:right;">
+296
+</td>
+<td style="text-align:right;">
+95
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+296
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Total
+</td>
+<td style="text-align:right;">
+335
+</td>
+<td style="text-align:right;">
+312
+</td>
+<td style="text-align:right;">
+93
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+312
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+<button class="btn btn-warning" onclick="&#10;    async function downloadFile(event) {&#10;      event.preventDefault();&#10;      try {&#10;        const response = await fetch(&#39;data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,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&#39;);&#10;        if (!response.ok) throw new Error(&#39;Network response failed&#39;);&#10;        const blob = await response.blob();&#10;        const blobUrl = window.URL.createObjectURL(blob);&#10;        const a = document.createElement(&#39;a&#39;);&#10;        a.href = blobUrl;&#10;        a.download = &#39;progres_reg_per_jenjang.xlsx&#39;;&#10;        a.style.display = &#39;none&#39;;&#10;        document.body.appendChild(a);&#10;        a.dispatchEvent(new MouseEvent(&#39;click&#39;));&#10;        document.body.removeChild(a);&#10;        setTimeout(() =&gt; {&#10;          window.URL.revokeObjectURL(blobUrl);&#10;        }, 100);&#10;        return false;&#10;      } catch (error) {&#10;        console.error(&#39;Download failed:&#39;, error);&#10;        alert(&#39;Download failed. Please try again.&#39;);&#10;      }&#10;    }&#10;    downloadFile(event);&#10;  " has_icon="TRUE"><i class="fa fa-save"></i> Download data</button>
+</div>
+</div>
+<div id="row-7" class="section level2">
+<h2>row</h2>
+<div id="progres-registrasi-di-setiap-program-studi"
+class="section level3">
+<h3><strong>Progres registrasi di setiap Program Studi</strong></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="4">
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Registrasi Online
+</div>
+</th>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+Fakultas/Program Studi
+</th>
+<th style="text-align:right;">
+Peminat
+</th>
+<th style="text-align:right;">
+Lulus
+</th>
+<th style="text-align:right;">
+% Lulus
+</th>
+<th style="text-align:right;">
+Sudah
+</th>
+<th style="text-align:right;">
+Belum
+</th>
+<th style="text-align:right;">
+Sudah (%)
+</th>
+<th style="text-align:right;">
+Belum (%)
+</th>
+<th style="text-align:right;">
+Diterima
+</th>
+</tr>
+</thead>
+<tbody>
+<tr grouplength="1">
+<td colspan="9" style="background-color: #666; color: #fff;">
+<strong>Hukum</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+HUKUM
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+25
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+25
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr grouplength="18">
+<td colspan="9" style="background-color: #666; color: #fff;">
+<strong>Keguruan dan Ilmu Pendidikan</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+BIMBINGAN DAN KONSELING
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+PENDIDIKAN BAHASA INDONESIA
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+PENDIDIKAN BAHASA INGGRIS
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+PENDIDIKAN BIOLOGI
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+PENDIDIKAN FISIKA
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+PENDIDIKAN GURU PENDIDIKAN ANAK USIA DINI
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+PENDIDIKAN GURU SEKOLAH DASAR
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+PENDIDIKAN IPA
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+PENDIDIKAN KHUSUS
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+PENDIDIKAN KIMIA
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+PENDIDIKAN MATEMATIKA
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+PENDIDIKAN NON FORMAL
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+PENDIDIKAN PANCASILA DAN KEWARGANEGARAAN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+PENDIDIKAN SEJARAH
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+PENDIDIKAN SENI PERTUNJUKAN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+PENDIDIKAN SOSIOLOGI
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+PENDIDIKAN VOKASIONAL TEKNIK ELEKTRO
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+PENDIDIKAN VOKASIONAL TEKNIK MESIN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr grouplength="8">
+<td colspan="9" style="background-color: #666; color: #fff;">
+<strong>Teknik</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+INFORMATIKA
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+STATISTIKA
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+TEKNIK ELEKTRO
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+TEKNIK INDUSTRI
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+TEKNIK KIMIA
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+TEKNIK MESIN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+TEKNIK METALURGI
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+TEKNIK SIPIL
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr grouplength="6">
+<td colspan="9" style="background-color: #666; color: #fff;">
+<strong>Pertanian</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+AGRIBISNIS
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+AGROEKOTEKNOLOGI
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+ILMU KELAUTAN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+ILMU PERIKANAN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+PETERNAKAN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+TEKNOLOGI PANGAN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr grouplength="8">
+<td colspan="9" style="background-color: #666; color: #fff;">
+<strong>Ekonomi dan Bisnis</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+ADMINISTRASI PAJAK
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+AKUNTANSI
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+AKUNTANSI D3
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+EKONOMI PEMBANGUNAN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+EKONOMI SYARIAH
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+MANAJEMEN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+MANAJEMEN PEMASARAN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+PERBANKAN DAN KEUANGAN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr grouplength="3">
+<td colspan="9" style="background-color: #666; color: #fff;">
+<strong>Ilmu Sosial dan Ilmu Politik</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+ADMINISTRASI PUBLIK
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+ILMU KOMUNIKASI
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+ILMU PEMERINTAHAN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr grouplength="4">
+<td colspan="9" style="background-color: #666; color: #fff;">
+<strong>Kedokteran</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+GIZI
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+ILMU KEOLAHRAGAAN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+KEDOKTERAN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+KEPERAWATAN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Total
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+312
+</td>
+<td style="text-align:right;">
+Inf
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+312
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+<button class="btn btn-warning" onclick="&#10;    async function downloadFile(event) {&#10;      event.preventDefault();&#10;      try {&#10;        const response = await fetch(&#39;data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,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&#39;);&#10;        if (!response.ok) throw new Error(&#39;Network response failed&#39;);&#10;        const blob = await response.blob();&#10;        const blobUrl = window.URL.createObjectURL(blob);&#10;        const a = document.createElement(&#39;a&#39;);&#10;        a.href = blobUrl;&#10;        a.download = &#39;progres_reg_per_prodi.xlsx&#39;;&#10;        a.style.display = &#39;none&#39;;&#10;        document.body.appendChild(a);&#10;        a.dispatchEvent(new MouseEvent(&#39;click&#39;));&#10;        document.body.removeChild(a);&#10;        setTimeout(() =&gt; {&#10;          window.URL.revokeObjectURL(blobUrl);&#10;        }, 100);&#10;        return false;&#10;      } catch (error) {&#10;        console.error(&#39;Download failed:&#39;, error);&#10;        alert(&#39;Download failed. Please try again.&#39;);&#10;      }&#10;    }&#10;    downloadFile(event);&#10;  " has_icon="TRUE"><i class="fa fa-save"></i> Download data</button>
+</div>
+</div>
+</div>
+<div id="camaba-registrasi" class="section level1">
+<h1>Camaba Registrasi</h1>
+<div id="row-8" class="section level2">
+<h2>row</h2>
+<div
+id="berikut-adalah-daftar-nama-calon-mahasiswa-baru-universitas-sultan-ageng-tirtayasa-jalur-smmptn-yang-melakukan-registrasi-ulang-di-admisi.untirta.ac.id-gunakan-search-untuk-pencarian-cepat."
+class="section level3">
+<h3>Berikut adalah daftar nama calon mahasiswa baru Universitas Sultan
+Ageng Tirtayasa jalur SMMPTN yang melakukan registrasi ulang di
+admisi.untirta.ac.id (<strong>gunakan Search untuk pencarian
+cepat</strong>).</h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-e94c8328f2b9e0835368" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-e94c8328f2b9e0835368">{"x":{"filter":"none","vertical":false,"fillContainer":true,"data":[[42431111515,42431111655,42431110558,42431110811,42431111187,42431111268,42431111182,42431110354,42431110953,42431110360,42431110489,42431110560,42431110415,42431110937,42431110221,42431110070,42431110480,42431110459,42431111654,42431111217,42431110559,42431111265,42431110813,42432410671,42431111103,42431111010,42431111666,42431110601,42431110645,42431110995,42431111754,42431111480,42431110067,42431110254,42431110983,42431111521,42432410456,42431110572,42431111358,42433111626,42431110079,42431110938,42431110492,42431110565,42431110528,42432410937,42431111572,42431110725,42431111274,42431110552,42431110271,42431111059,42431111509,42432410851,42431110413,42431111038,42431111551,42431110238,42431111514,42431111286,42431110148,42431111799,42431111111,42431110145,42431110628,42431110146,42433111175,42431110835,42431111284,42431111573,42431110406,42431110375,42431111169,42431110921,42431110836,42431110078,42433110637,42431110640,42431111345,42431110153,42431110749,42431111587,42431111022,42431111423,42431111803,42431110752,42431110832,42431110133,42431111259,42431110204,42431110408,42431110720,42431110741,42431110965,42431110507,42431110002,42431110179,42431111175,42432410731,42431110445,42431110491,42431110305,42431110707,42414110110,42431110129,42431111437,42431110399,42431111397,42431110662,42431111304,42431110173,42431110822,42431111130,42431110055,42431110472,42431110402,42431111189,42431110954,42431110342,42431110738,42431111171,42432410791,42431111425,42431110814,42431111128,42431110848,42433110684,42431110868,42431111570,42431110270,42431111192,42431110023,42431110065,42431110481,42431111517,42433110567,42431111554,42431110091,42431111669,42431111289,42431110691,42431110190,42431111380,42431110217,42431111565,42431111247,42431111074,42431110269,42431110370,42431111628,42431111156,42431111064,42431110807,42431111676,42431110780,42431111400,42432410674,42431110452,42431110292,42431111145,42431110723,42431110795,42431111183,42431110287,42431111154,42431110181,42431111297],["FAHMI RIZKY KHOIRUL JIHAD","MUHAMMAD RAIHAN AL PARIDZI","LEASY SUDIBYO","BAGAS PUTRA SATRIO","MUHAMMAD DIMAS FAJAR SADEWO","AZKA YOSE ASMORO","NAKHLAH ADIGUNA","NABILA TAMASSA","CIQUEENTITA FAHRA PRATIWI","INDA INDRIANI","ASKIA DAYANA FATIN","DYANA CANTIKA","YASFIGAR FALLAH","NAILA KHAIRUNNISA","MOHAMMAD HARIS ANGGA MAULANA","NILA NISMALIA","MUHAMMAD ADIL RAHMATULLAH","NOFAN ANDRIAN","MIFTAHUL FARID","NAFILAH RAMADHANI AZZAHRA","ZAHRA GENDIS MEDANIA","MUHAMMAD NAUFAL FIRDAUS","ARYA DWI ALFIAN","ADAM GUNAWAN ARRASY","DESWITHA EKA ANGGRAENI","SILISA TAPFUZ","RIFKY AULIA NURHANDI","BIGI BAGAS KHYA","ZHAFIF SABIQ AL ISLAMI","MALIK ZEIN AL MAKHZUMI","AZKA MUHAMAD WAFA AZIZ","MUHAMAD HERDIANSAH","SAKINAH AZZAHRA RAMADHANIA","FAKHRIY RAHMAN","MELANI PUTRI MARIA SIANTURI","SALMA FAKHRANA RAMADHANI","ARDHY PRATAMA","AYU SALSABILA ASRI","DIAS YASFIN APRILIAWAN","FITRIYA NUROCTAVIANI","NANDA HUSNATUNNISA","AMALIA JANAPUTRI","NADIYA FEBRIANTI","SEFTI CAHYA ANDINI","NAJMA AYU SABRINA","NAZHIRA YASMINE RANGKUTI","DZAKIYYA WANDA JAMILAH","INDAH DWI YANTI","ANESA SUTANTI","RENISA FANYSA HAMZAH","ZAHRATUL FAWAZ","ANDI DAFFA ZAKY RAMADHAN","KHAIRA RAHMATISA HADIZA","NOVA FAUJAWATI","MUHAMMAD RHAZEZ AURELIAN","FELICIA DESTALIZA","HASNA NAILA RAHMANI","WAHYU RAMADHANI","ASYIFA SEPTIA NUR RAMDIAH","DENASYA PUTRI","MUHAMMAD RIFQI FAKHIRA","RIZKI PERMANA","MUHAMMAD ZACKY JAYA PERMANA","FADLI ROSADI","SILVI SURYANI","MUHAMMAD ADITYA HISYAM","KINANTI BUNGA CITAMAYA","HAIKAL AKBAR","MUHAMMMAD FATIH NASHIRUDDIN","NUR AFINI DWI PUTRI","MUHAMMAD BIARZAKI PRATAMA","LALA DIANA MITA","GILANG PERMADI","ANITA ROFIQOH","BARA LINGGA PRATAMA","ANANDA ALAN A'LA","SALMA KHOIRUNNAJAH","NAJWA MEYLI FRANSISKA","FASYA AUDYA BELLA","SITI NAJWA ALIFIANDA PUTRI DARWIS","NORMA SUCI PRATIWI","AMALIA LAILY","HAEKAL IBRAHIM SOFI","ADI KURNIAWAN","JAILANI","SATI SUKMAWATI MARIF","NOVIA INDAH FITRI","DANAR RESTU WIJAYA","REVAN TRI ANGGARA","FARHAN AZIZ TRIATMOJO","RAFI NADHIF SANTANA","KHOIRUL ANAM","RATU SALMA SALSABILA","RAHMA AULIA","MUHAMMAD KAUTSAR","NAZWA NABILA PUTRI","FIFI DWIYULIANTI KASYAH","NANANG","AKHDAN FADHAL KHADAFI","LORIS SAPUTRA","AGHNIA PUTRI SEPTIANI","NADAZULIANFI AGUSTIN","AHMAD RAMDHAN IBRAHIM","GINA AFINI","FEDYA JELILA","NANDA NURUZZAHRA","SITI JUNELIYAH","MUHARRAM FASYA HARAHAP","SANDELA MULIA SYAFIROH","REZA CAHYA RAMDANI","LUTHFI EKA SAPUTRA","FADHLAN SUHADA","PUTRI PRIYANKA","HAIKAL FIRDAUS","LAILAFI SUJUDHI SUKRON","MUHAMMAD ARBADIANSYAH ALFATH","YONA MAYDIANA","SARAH FARADILLA","I MADE SATRIA YUDHA","FARHA NABILA CHAYYARA","RAUDHATUL YASMIN AZZAHRA","NAYLA NUR AZIZAH","ARIQ SULTHAN DARMAWAN","DINDA","ALINDA NUR RIZKI KURNITA","AUNI SAFITRI","ISTIADAH BASMALLAH","UMAR ABDUL RASYID","ATHFAL REZVY ALFAIDZ","TAUFIQ RAMDHANI","NURAJIZIAH","ANGGUN ARKHADIVA GIANTONIE","RAJWAA TAUFIIQURRAHMAN","KESAR DARIUS PAKPAHAN","RESTU BIROE MUNANDAR","NAILY NAJA MAULAYA","MUHAMAD IZAZ NUGRAHA","MUHAMAD ZIDAN MAHESA RUSWANI","ALVIN NATHANIEL NOVANDRY","AKBAR BINTANG RAMDHANI","MUHAMMAD BAGAS DZUL FIKRI","NIKAYLA ZALFAA SALSABILA","MUHAMMAD PASHA FATHURILHAM","KHANSA KHAIRUNNISA","AMANDA OCTA VINA","FAIRUZ ZAHRAH FIRDAUS","RIFFA DEA NABILA","NOURAH SARAH MYANGSARI","NAUFAL RIZKY NUGRAHA","MUHAMMAD MUHFID","SABRINA AZARIA JABANI","MUHAMMAD AKMAL RAFFIANSYAH","ORINA BEATRIXA","MUHAMAD FAQIH AZZAHRAN","DEFRI HADI NUGROHO","JEFFRY SYAHPUTRA","INAYAH NUR QONITA","LAISYA DWI SAFITRI","FAISHAL NUR RAHMAN","MUTIA AINI DWI SEPTIANI","WIDYA ANANDA PNAGESTU","KINAN AKBAR SETIAWAN","RATU MEIRA NURINNISA","MUHAMMAD RIDWAN RAMADHAN","TRY RATU MAWARDANI","MUHAMAD HAFIDZUN AMIN","ZAFIRA ZAHROH"],["L","L","P","L","L","L","L","P","P","P","P","P","L","P","L","P","L","L","L","P","P","L","L","L","P","L","L","L","L","L","L","L","P","L","P","P","L","P","L","P","P","P","P","P","P","P","P","P","P","P","P","L","P","P","L","P","P","P","P","P","L","L","L","L","P","L","P","L","L","P","L","P","L","P","L","L","P","P","P","P","P","P","L","L","L","P","P","L","L","L","L","L","P","P","L","P","P","L","L","L","P","P","L","P","P","P","P","L","P","L","L","L","P","L","P","L","P","P","L","P","P","P","L","P","P","P","P","L","L","L","P","P","L","L","P","P","L","L","L","L","L","P","L","P","P","P","P","P","L","L","P","L","P","L","L","L","P","P","L","P","P","L","P","L","P","L","P"],["ILMU PEMERINTAHAN","AGRIBISNIS","PENDIDIKAN MATEMATIKA","AGROEKOTEKNOLOGI","MANAJEMEN","TEKNIK MESIN","TEKNIK MESIN","HUKUM","PENDIDIKAN BIOLOGI","AGROEKOTEKNOLOGI","ILMU KOMUNIKASI","PENDIDIKAN IPA","HUKUM","PENDIDIKAN GURU PENDIDIKAN ANAK USIA DINI","PENDIDIKAN SOSIOLOGI","AGROEKOTEKNOLOGI","HUKUM","HUKUM","TEKNIK ELEKTRO","PENDIDIKAN BIOLOGI","EKONOMI PEMBANGUNAN","TEKNIK MESIN","TEKNIK ELEKTRO","TEKNIK MESIN","TEKNIK METALURGI","ADMINISTRASI PAJAK","EKONOMI PEMBANGUNAN","TEKNIK MESIN","PENDIDIKAN KHUSUS","AGROEKOTEKNOLOGI","PENDIDIKAN SOSIOLOGI","PENDIDIKAN VOKASIONAL TEKNIK ELEKTRO","PENDIDIKAN NON FORMAL","ADMINISTRASI PUBLIK","PENDIDIKAN PANCASILA DAN KEWARGANEGARAAN","EKONOMI SYARIAH","ILMU PERIKANAN","PENDIDIKAN SENI PERTUNJUKAN","ILMU KELAUTAN","AGRIBISNIS","PENDIDIKAN GURU SEKOLAH DASAR","HUKUM","PENDIDIKAN FISIKA","AGROEKOTEKNOLOGI","TEKNIK INDUSTRI","PENDIDIKAN SEJARAH","ADMINISTRASI PUBLIK","AKUNTANSI D3","PENDIDIKAN BAHASA INDONESIA","PERBANKAN DAN KEUANGAN","PENDIDIKAN BAHASA INDONESIA","EKONOMI SYARIAH","ILMU KOMUNIKASI","PENDIDIKAN BAHASA INGGRIS","HUKUM","AKUNTANSI","TEKNIK SIPIL","PENDIDIKAN MATEMATIKA","TEKNOLOGI PANGAN","PENDIDIKAN MATEMATIKA","PENDIDIKAN SEJARAH","ILMU KOMUNIKASI","KEDOKTERAN","TEKNIK MESIN","PENDIDIKAN BAHASA INDONESIA","TEKNIK MESIN","TEKNOLOGI PANGAN","ADMINISTRASI PUBLIK","HUKUM","ILMU KOMUNIKASI","ADMINISTRASI PUBLIK","KEPERAWATAN","INFORMATIKA","AKUNTANSI D3","PETERNAKAN","TEKNIK KIMIA","ILMU KOMUNIKASI","AKUNTANSI","ADMINISTRASI PUBLIK","PETERNAKAN","PENDIDIKAN VOKASIONAL TEKNIK ELEKTRO","GIZI","TEKNIK METALURGI","PENDIDIKAN BIOLOGI","PENDIDIKAN SENI PERTUNJUKAN","ILMU PEMERINTAHAN","ILMU KOMUNIKASI","ILMU PERIKANAN","PENDIDIKAN PANCASILA DAN KEWARGANEGARAAN","ILMU KELAUTAN","TEKNIK ELEKTRO","ILMU PEMERINTAHAN","BIMBINGAN DAN KONSELING","PENDIDIKAN NON FORMAL","AKUNTANSI","PENDIDIKAN GURU PENDIDIKAN ANAK USIA DINI","PENDIDIKAN BAHASA INDONESIA","ILMU PERIKANAN","MANAJEMEN","EKONOMI SYARIAH","HUKUM","AGRIBISNIS","PENDIDIKAN KIMIA","PENDIDIKAN IPA","PENDIDIKAN KHUSUS","PENDIDIKAN PANCASILA DAN KEWARGANEGARAAN","PENDIDIKAN GURU SEKOLAH DASAR","AGRIBISNIS","ADMINISTRASI PUBLIK","PENDIDIKAN KIMIA","INFORMATIKA","PENDIDIKAN VOKASIONAL TEKNIK MESIN","HUKUM","ILMU PERIKANAN","TEKNIK KIMIA","ILMU PERIKANAN","MANAJEMEN","MANAJEMEN","AGRIBISNIS","TEKNIK SIPIL","PENDIDIKAN IPA","HUKUM","PENDIDIKAN NON FORMAL","ILMU PEMERINTAHAN","ILMU PEMERINTAHAN","MANAJEMEN","PENDIDIKAN KHUSUS","TEKNIK ELEKTRO","TEKNIK INDUSTRI","EKONOMI PEMBANGUNAN","PENDIDIKAN KIMIA","PENDIDIKAN MATEMATIKA","PENDIDIKAN NON FORMAL","TEKNIK INDUSTRI","AGROEKOTEKNOLOGI","AGROEKOTEKNOLOGI","AKUNTANSI","PENDIDIKAN NON FORMAL","HUKUM","MANAJEMEN","TEKNIK SIPIL","HUKUM","ILMU PEMERINTAHAN","PENDIDIKAN BAHASA INGGRIS","MANAJEMEN PEMASARAN","AKUNTANSI","HUKUM","TEKNIK ELEKTRO","PENDIDIKAN SOSIOLOGI","TEKNIK ELEKTRO","TEKNIK SIPIL","INFORMATIKA","EKONOMI SYARIAH","ILMU KEOLAHRAGAAN","PENDIDIKAN FISIKA","AGROEKOTEKNOLOGI","PENDIDIKAN BAHASA INGGRIS","ADMINISTRASI PUBLIK","AGRIBISNIS","ILMU PERIKANAN","MANAJEMEN","HUKUM","TEKNIK INDUSTRI","ILMU KOMUNIKASI","PETERNAKAN","ADMINISTRASI PUBLIK","PENDIDIKAN SEJARAH"]],"container":"<table class=\"display fill-container\">\n  <thead>\n    <tr>\n      <th>No Pendaftaran<\/th>\n      <th>Nama<\/th>\n      <th>Jenis Kelamin<\/th>\n      <th>Program Studi<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":0},{"name":"No Pendaftaran","targets":0},{"name":"Nama","targets":1},{"name":"Jenis Kelamin","targets":2},{"name":"Program Studi","targets":3}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<div id="mahasiswa-baru" class="section level1">
+<h1>Mahasiswa Baru</h1>
+<div id="row-9" class="section level2">
+<h2>row</h2>
+<div
+id="berikut-adalah-daftar-nama-mahasiswa-baru-universitas-sultan-ageng-tirtayasa-jalur-smmptn-gunakan-search-untuk-pencarian-cepat."
+class="section level3">
+<h3>Berikut adalah daftar nama mahasiswa baru Universitas Sultan Ageng
+Tirtayasa jalur SMMPTN (<strong>gunakan Search untuk pencarian
+cepat</strong>).</h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-f954587d602dff300b8b" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-f954587d602dff300b8b">{"x":{"filter":"none","vertical":false,"fillContainer":true,"data":[[],[],[],[]],"container":"<table class=\"display fill-container\">\n  <thead>\n    <tr>\n      <th>No Pendaftaran<\/th>\n      <th>Nama<\/th>\n      <th>Jenis Kelamin<\/th>\n      <th>Program Studi<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":0},{"name":"No Pendaftaran","targets":0},{"name":"Nama","targets":1},{"name":"Jenis Kelamin","targets":2},{"name":"Program Studi","targets":3}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+
+</div>
+
+<script>
+$(document).ready(function() {
+  // add bootstrap table styles to pandoc tables
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed table-sm');
+
+  // initialize mathjax
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+  document.getElementsByTagName("head")[0].appendChild(script);
+
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+  FlexDashboard.init({
+    fillPage: false,
+    orientation: "rows",
+    storyboard: false,
+    defaultFigWidth: 576,
+    defaultFigHeight: 460,
+    defaultFigWidthMobile: 360,
+    defaultFigHeightMobile: 460,
+    resize_reload: true
+  });
+  var navbar = $(".navbar").first();
+  var body = $("body").first();
+  var sidebar = $(".section.sidebar").first();
+  function addNavbarPadding() {
+    var navHeight = navbar.outerHeight();
+    body.css("padding-top", (navHeight + 8) + "px");
+    sidebar.css("top", navHeight + "px");
+    var resizeEvent = window.document.createEvent("UIEvents");
+    resizeEvent.initUIEvent("resize", true, false, window, 0);
+    window.dispatchEvent(resizeEvent);
+  }
+  if (!window.Shiny) setTimeout(addNavbarPadding, 100);
+  $(document).on("shiny:idle", function() {
+    setTimeout(addNavbarPadding, 50);
+  });
+});
+</script>
+
+</body>
+</html>
